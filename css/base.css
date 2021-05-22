@@ -51,7 +51,6 @@ code{
 
 body{
     margin: 0px;
-    background-color: green;
 }
 
 a{
@@ -66,7 +65,7 @@ hr{
     margin: 0px 50px;
     height: 1px;
     border: none;
-    background-color: var(--gry2);
+    background-color: var(--grey2);
 }
 
 .gradient-masthead{
@@ -146,7 +145,7 @@ hr{
     font-size: 15px;
     font-weight: 400;
     text-decoration: none;
-    color: var(--gry1);
+    color: var(--grey1);
     margin: 0px 20px;
 
     opacity: 0.5;
