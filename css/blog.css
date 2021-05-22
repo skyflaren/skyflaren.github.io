@@ -1,12 +1,26 @@
 #blogbg {
     margin-top: 70px;
-    background-color: var(--grey3);
-}
-.container{
     background-color: var(--grey4);
+}
+#container {
+    padding: 0;
+}
+#blog {
     display: flex;
+    height: calc(100vh - 70px);
+}
+#blognav {
+    width: 100px;
+    background-color: var(--grey3);
+    box-shadow: 0.5px 0 4px 0px rgba(48, 45, 45, 0.6);
+}
+#blogcontent {
+    display: flex;  
+    width: calc(100% - 100px);
 }
 #images, #text {
+    padding: 20px;
     width: 50%;
     word-wrap: break-word;
+    height: 100%;
 }

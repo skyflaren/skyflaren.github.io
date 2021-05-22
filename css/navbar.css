@@ -7,6 +7,7 @@
     -webkit-flex-direction: row-reverse;
     flex-direction: row-reverse;
     color: var(--gold2);
+    box-shadow: 0 0 8px 0 var(--grey1);
 }
 
 #navbar-bkg{
@@ -49,19 +50,19 @@
 
 .home-logo{
     order:1;
-    width: 28px;
-    height: 28px;
+    width: 24px;
+    height: 24px;
     margin: 0px;
     position: absolute;
     left: 20px;
-    top: -6px;
+    top: -4px;
 }
 .home-name{
     order:1;
     height: 28px;
     margin: 0px;
     position: absolute;
-    margin-left: 30px;
+    margin-left: 35px;
 
     font-weight: 700;
     color: var(--navbartext);
@@ -72,7 +73,7 @@
     left: 0px;
     top: 0px;
     height: 70px;
-    width: 117px;
+    width: 87px;
     left: 20px;
 }
 
@@ -83,9 +84,4 @@
 	position:absolute;
 	background-color: var(--gold1);
 	display: none;
-}
-
-#bar {
-	float:right;
-    background-color: #db735e;
 }
