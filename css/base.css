@@ -28,7 +28,7 @@
     /*light gold*/
     --gold2: #cbb682;
 
-    --navbartext: var(--gold2);
+    --navbartext: var(--gold1);
 }
 
 * {
