@@ -23,8 +23,12 @@
     --red25: #db735e;
     /*paler than --red25*/
     --salmon: #e8937b;
+    /*gold*/
+    --gold1: #cb9848;
+    /*light gold*/
+    --gold2: #cbb682;
 
-    --navbartext: var(--red0);
+    --navbartext: var(--gold2);
 }
 
 * {
