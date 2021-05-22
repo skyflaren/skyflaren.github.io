@@ -37,6 +37,7 @@
 
 p{
     white-space: pre-wrap;
+    margin: 0;
 }
 
 code{
@@ -159,5 +160,8 @@ hr{
 
 .container{
     margin: auto;
-    max-width: 1000px
+    padding: 20px;
+    max-width: 1000px;
+    height: 100vw;
+
 }
