@@ -4,4 +4,9 @@
 }
 .container{
     background-color: var(--grey4);
+    display: flex;
+}
+#images, #text {
+    width: 50%;
+    word-wrap: break-word;
 }
