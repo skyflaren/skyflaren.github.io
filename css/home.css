@@ -1,0 +1,19 @@
+.masthead{
+    margin-top: 70px;
+    height: 500px;
+    
+    background-color: var(--grey4);
+}
+
+.masthead-graphic{
+	height: 100%;
+	width: auto;
+}
+
+.header-title{
+    font-family: 'Montserrat', sans-serif;
+    padding: calc(370px + 6vh - 6vw) 0px 0px 50px;
+    color: white;
+    font-weight: 700px;
+    font-size: calc(5vw + 50px);
+}

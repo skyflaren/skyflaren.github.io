@@ -69,21 +69,9 @@ hr{
     background-color: var(--grey2);
 }
 
-.gradient-masthead{
-    height: 500px;
+/*img{
     width: 100%;
-    
-    background: rgb(133,68,53);
-    background: linear-gradient(85deg, rgba(133,68,53,1) 0%, rgba(209,107,86,1) 100%);
-}
-
-.header-title{
-    font-family: 'Montserrat', sans-serif;
-    padding: calc(370px + 6vh - 6vw) 0px 0px 50px;
-    color: white;
-    font-weight: 700px;
-    font-size: calc(5vw + 50px);
-}
+}*/
 
 .footer{
     height: 230px;
@@ -162,6 +150,6 @@ hr{
     margin: auto;
     padding: 20px;
     max-width: 1200px;
-    height: 100vw;
+    height: calc(100% - 40px);;
     box-shadow: 0 0 4px 0 var(--grey2);
 }
