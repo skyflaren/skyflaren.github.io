@@ -23,12 +23,8 @@
     --red25: #db735e;
     /*paler than --red25*/
     --salmon: #e8937b;
-    /*gold*/
-    --gold1: #cb9848;
-    /*light gold*/
-    --gold2: #cbb682;
 
-    --navbartext: var(--gold1);
+    --navbartext: var(--red0);
 }
 
 * {
@@ -50,8 +46,8 @@ code{
 }
 
 body{
-    margin: 0px;
-    background-color: green;
+    margin: 0;
+    background-color: green !important;
 }
 
 a{
@@ -159,6 +155,6 @@ hr{
 }
 
 .container{
+    max-width: 1000px;
     margin: auto;
-    max-width: 1000px
 }
