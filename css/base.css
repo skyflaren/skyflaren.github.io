@@ -68,7 +68,7 @@ hr{
     margin: 0px 50px;
     height: 1px;
     border: none;
-    background-color: var(--grey2);
+    background-color: var(--grey3);
 }
 
 h2{
@@ -177,5 +177,6 @@ b{
     margin: auto;
     padding: 20px;
     max-width: 1200px;
+    border-color: 5px solid blakc;
     /*height: calc(100% - 40px);*/
 }
