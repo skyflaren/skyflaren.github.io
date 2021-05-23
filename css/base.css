@@ -104,7 +104,7 @@ b{
 .footer{
     height: 230px;
     width: 100%;
-    background-color: var(--red3);
+    background-color: var(--grey1);
     display: flex;
     margin: auto;
 
@@ -116,9 +116,9 @@ b{
 .footer-title{
     margin-top: 25px;
     font-size: 18;
-    color: var(--red1);
+    color: var(--gold1);
     text-align: center;
-    padding: 0px 20px;
+    padding: 0px 60px;
 }
 
 .footer-title-par{
@@ -127,11 +127,10 @@ b{
 }
 
 .footer-bar{
-    background-color: var(--red25);
+    background-color: var(--grey2);
     height: 0.5vh;
     width: 10vw;
     margin: 15px auto 0px;
-    opacity: 0.3;
 }
 
 .foooter-icon-par{
@@ -147,7 +146,6 @@ b{
 .footer-icon{
     height: 3vh;
     width: 3vh;
-    opacity: 0.2;
     margin: 2vh calc(0.25vh + 0.25vw);
 }
 
