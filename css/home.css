@@ -1,13 +1,36 @@
 .masthead{
-    margin-top: 70px;
-    height: 500px;
-    
+	margin-top: 70px;
+
+	min-height: 400px;
+	height: 50vh;
+	max-height: 500px;
+
     background-color: var(--grey4);
 }
 
-.masthead-graphic{
+.masthead-wrap{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
 	height: 100%;
-	width: auto;
+	width: 100%;
+}
+
+.masthead-graphic{
+	height: auto;
+	max-width: 500px;
+	width: 50vw;
+	min-width: 300px;
+}
+
+.masthead-title{
+	font-family: 'Raleway', sans-serif;
+	width: 30vw;
+	text-align: center;
+	padding-left: 30px;
+	font-size: calc(3vw + 10px);
+	color: var(--grey2);
 }
 
 .header-title{
@@ -17,3 +40,4 @@
     font-weight: 700px;
     font-size: calc(5vw + 50px);
 }
+

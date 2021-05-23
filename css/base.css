@@ -69,9 +69,37 @@ hr{
     background-color: var(--grey2);
 }
 
+h2{
+    font-weight: 400;
+}
+
+b{
+    font: 900;
+}
+
 /*img{
     width: 100%;
 }*/
+
+.gold{
+    color: var(--gold1);
+}
+
+.grey1{
+    color: var(--grey1);
+}
+
+.grey2{
+    color: var(--grey2);
+}
+
+.grey3{
+    color: var(--grey3);
+}
+
+.grey4{
+    color: var(--grey4);
+}
 
 .footer{
     height: 230px;
