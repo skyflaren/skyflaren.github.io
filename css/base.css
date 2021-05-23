@@ -125,7 +125,7 @@ b{
 
 .footer-title-par{
     margin: 0px auto;
-    padding-top: 40px;
+    padding: 40px 0px 10px;
 }
 
 .footer-bar{
@@ -136,7 +136,7 @@ b{
 }
 
 .foooter-icon-par{
-    margin-top: 15px;
+    margin-top: 10px;
     display: flex;
     
     flex-direction: row;
@@ -149,10 +149,11 @@ b{
     height: 3vh;
     width: 3vh;
     margin: 2vh calc(0.25vh + 0.25vw);
+    opacity: 0.9;
 }
 
 .footer-icon:hover{
-    opacity: 0.3;
+    opacity: 0.6;
     cursor: pointer;
 }
 
@@ -164,14 +165,12 @@ b{
     text-decoration: none;
     color: var(--grey1);
     margin: 0px 20px;
-
-    opacity: 0.5;
 }
 
 .footer-name:hover{
     text-decoration: none;
     color: var(--red0);
-    opacity: 0.8;
+    /*opacity: 0.8;*/
 }
 
 .container{
