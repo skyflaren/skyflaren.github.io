@@ -15,21 +15,22 @@ async function setPost(id) {
     title.innerHTML = post.title;
     subtitle.innerHTML = post.date + " | " + post.subtitle;
     for(var para of post.body) {
-        var textbounds = document.createElement("div");
+        var textwrapper = document.createElement("div");
         var text = document.createElement("p");
+        textwrapper.classList.add("textwrapper");
         text.innerHTML = para.text;
-        textbounds.appendChild(text);
-        textbody.appendChild(textbounds);
+        textwrapper.appendChild(text);
+        textbody.appendChild(textwrapper);
         textbody.appendChild(document.createElement("br"));
 
-        var imgbounds = document.createElement("div");
+        var imgwrapper = document.createElement("div");
         var image = document.createElement("img");
+        imgwrapper.classList.add("imgwrapper");
         image.src = "https://campagne-api.waba359.repl.co/images/"+para.image;
-        image.height = textbounds.clientHeight;
-        imgbounds.appendChild(image);
-        console.log(textbounds.clientHeight);
-        imgbody.appendChild(imgbounds);
+        image.height = textwrapper.clientHeight;
+        imgwrapper.appendChild(image);
+        imgbody.appendChild(imgwrapper);
         imgbody.appendChild(document.createElement("br"));
     }
 }
-setPost("asdf");
+setPost("0000");

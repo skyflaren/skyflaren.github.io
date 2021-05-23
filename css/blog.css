@@ -57,8 +57,9 @@
 .blogbody {
     width: 100%;
 }
-#imgbody {
-    margin: 0px auto;
+.imgwrapper {
+    display: flex;
+    justify-content: center;
 }
 h1 {
     margin: 10px 0px;
