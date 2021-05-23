@@ -13,6 +13,14 @@
     width: 100px;
     background-color: var(--grey3);
     box-shadow: 0.5px 0 4px 0px rgba(48, 45, 45, 0.6);
+    padding-top: 14px;
+}
+.tooltip {
+    position: fixed;
+    display: none;
+}
+#blognav:hover .tooltip {
+    display: block;
 }
 #blogcontent {
     display: flex;  
@@ -53,6 +61,7 @@
 #header2 {
     display: block;
     word-wrap: break-word;
+    width: 100%;
 }
 .blogbody {
     width: 100%;
@@ -60,7 +69,24 @@
 .imgwrapper {
     display: flex;
     justify-content: center;
+    margin-bottom: 20px;
+}
+.textwrapper {
+    margin-bottom: 20px;
 }
 h1 {
     margin: 10px 0px;
+}
+#subtitle {
+    margin-bottom: 10px;
+}
+hr {
+    margin: 0;
+    width: 100%;
+}
+#blognav img {
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+    margin: 0px 14px 14px 14px;
 }
