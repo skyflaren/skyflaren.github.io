@@ -22,6 +22,7 @@ async function getPosts() {
         button.appendChild(thumbnail);
         //button.appendChild(text);
         thumbnail.src = "https://campagne-api.waba359.repl.co/images/"+post.thumbnail;
+        thumbnail.alt = "Blog Icon";
         navbar.appendChild(button);
     }
     document.getElementById(recent).style.border = "solid 2px var(--gold1)";
@@ -34,6 +35,7 @@ async function setPost(id) {
     let blogbody = document.getElementById("blogbody");
     blogbody.innerHTML = "";
     thumbnail.src = "https://campagne-api.waba359.repl.co/images/"+post.thumbnail;
+    thumbnail.alt = post.title+" Thumbnail";
     title.innerHTML = post.title;
     subtitle.innerHTML = post.date + " | " + post.subtitle;
     for(var para of post.body) {
@@ -46,7 +48,7 @@ async function setPost(id) {
         imgwrapper.classList.add("img");
         textwrapper.classList.add("text");
         image.src = "https://campagne-api.waba359.repl.co/images/"+para.image;
-        image.alt = post.title+"Image";
+        image.alt = post.title+" Image";
         text.innerHTML = para.text;
         imgwrapper.appendChild(image);
         textwrapper.appendChild(text);

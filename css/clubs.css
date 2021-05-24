@@ -41,6 +41,13 @@ p {
     color: var(--grey2);
 }
 @media screen and (max-width: 800px) {
+    #container {
+        padding: 10px;
+    }
+    #container h1 {
+        width: calc(100% - 20px);
+        text-align: center;
+    }
     .club {
         flex-direction: column;
     }
