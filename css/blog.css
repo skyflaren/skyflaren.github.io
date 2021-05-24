@@ -1,10 +1,3 @@
-#blogbg {
-    margin-top: 70px;
-    background-color: var(--grey4);
-}
-#container {
-    padding: 0;
-}
 #blog {
     display: flex;
     /*height: calc(100vh - 70px);*/

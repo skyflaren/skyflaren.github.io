@@ -1,0 +1,56 @@
+#clubs {
+    width: 100%;
+}
+.club {
+    padding: 10px 0px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.club::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+.data {
+    height: 100%;
+}
+.img {
+    width: 20%;
+    border-left: 10px solid red;
+    border-bottom: None;
+    padding-left: 10px;
+    padding-bottom: 0px;
+}
+.text {
+    height: 20%;
+    width: 75%;
+    margin-left: 10px;
+}
+h1 {
+    color: var(--grey1);
+    margin: 0px;
+}
+p {
+    color: var(--grey2);
+}
+hr {
+    margin: 0;
+}
+@media screen and (max-width: 600px) {
+    .data {
+        text-align: center;
+        margin: 0px;
+        padding: 10px;
+    }
+    .img {
+        width: 100%;
+        border-left: None;
+        border-bottom: 10px solid red;
+        padding: 0px;
+        padding-bottom: 10px;
+    }
+    .text {
+        width: calc(100% - 20px);
+    }
+}

@@ -65,7 +65,7 @@ span{
 }
 
 hr{
-    margin: 0px 50px;
+    margin: 0px;
     height: 1px;
     border: none;
     background-color: var(--grey3);
@@ -94,6 +94,15 @@ b{
 
 .grey2{
     color: var(--grey2);
+}
+
+#bg {
+    margin-top: 70px;
+    background-color: var(--grey4);
+}
+#container {
+    padding: 0;
+    /*border: 2px solid black;*/
 }
 
 .grey3{
