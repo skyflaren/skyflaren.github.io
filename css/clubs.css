@@ -17,9 +17,6 @@
     clear: both;
     display: table;
 }
-.data {
-    height: 100%;
-}
 .img {
     width: 20%;
     border-left-style: solid;
@@ -43,27 +40,24 @@ h2 {
 p {
     color: var(--grey2);
 }
-hr {
-    margin: 0;
-}
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
     .club {
         flex-direction: column;
-    }
-    .data {
-        text-align: center;
-        margin: 0px;
-        padding: 10px;
     }
     .img {
         width: 80%;
         border-left: None;
         border-bottom-style: solid;
         border-bottom-width: 10px;
+        text-align: center;
+        margin: 0px;
         padding: 0px;
         padding-bottom: 10px;
     }
     .text {
         width: calc(100% - 20px);
+        text-align: center;
+        margin: 0px;
+        padding: 10px;
     }
 }

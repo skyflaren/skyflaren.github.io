@@ -13,10 +13,8 @@ async function getClubs(filter) {
             clubwrapper.classList.add("club");
             thumbnail.src = "https://campagne-api.waba359.repl.co/images/"+club.thumbnail;
             thumbnail.alt = club.name;
-            thumbnail.classList.add("data");
             thumbnail.classList.add("img");
             thumbnail.style.borderColor = "var(--status"+club.status+")";
-            text.classList.add("data");
             text.classList.add("text");
             name.innerHTML = club.name;
             teacher.innerHTML = club.teacher;

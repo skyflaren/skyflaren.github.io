@@ -31,31 +31,28 @@ async function setPost(id) {
     let thumbnail = document.getElementById("thumbnail");
     let title = document.getElementById("title");
     let subtitle = document.getElementById("subtitle");
-    let imgbody = document.getElementById("imgbody");
-    let textbody = document.getElementById("textbody");
-    imgbody.innerHTML = "";
-    textbody.innerHTML = "";
+    let blogbody = document.getElementById("blogbody");
+    blogbody.innerHTML = "";
     thumbnail.src = "https://campagne-api.waba359.repl.co/images/"+post.thumbnail;
     title.innerHTML = post.title;
     subtitle.innerHTML = post.date + " | " + post.subtitle;
     for(var para of post.body) {
-        var textwrapper = document.createElement("div");
-        var text = document.createElement("p");
-        textwrapper.classList.add("textwrapper");
-        text.innerHTML = para.text;
-        textwrapper.appendChild(text);
-        textbody.appendChild(textwrapper);
-        textbody.appendChild(document.createElement("br"));
-
+        var wrapper = document.createElement("div");
         var imgwrapper = document.createElement("div");
         var image = document.createElement("img");
-        imgwrapper.classList.add("imgwrapper");
+        var textwrapper = document.createElement("div");
+        var text = document.createElement("p");
+        wrapper.classList.add("wrapper");
+        imgwrapper.classList.add("img");
+        textwrapper.classList.add("text");
         image.src = "https://campagne-api.waba359.repl.co/images/"+para.image;
         image.alt = post.title+"Image";
-        image.height = textwrapper.clientHeight;
+        text.innerHTML = para.text;
         imgwrapper.appendChild(image);
-        imgbody.appendChild(imgwrapper);
-        imgbody.appendChild(document.createElement("br"));
+        textwrapper.appendChild(text);
+        wrapper.appendChild(imgwrapper);
+        wrapper.appendChild(textwrapper);
+        blogbody.appendChild(wrapper);
     }
 }
 getPosts();
