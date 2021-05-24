@@ -7,20 +7,51 @@
     background-color: var(--grey3);
     box-shadow: 0.5px 0 4px 0px rgba(48, 45, 45, 0.6);
     padding-top: 14px;
+    display: flex;
+    flex-direction: column;
+}
+.button {
+    position: relative;
+    display: inline-block;
+    margin: 0px 14px 14px 14px
+}
+.button .tooltip {
+    visibility: hidden;
+    width: auto;
+    white-space: nowrap;
+    height: 20px;
+    background-color: var(--grey2);
+    color: var(--grey4);
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 10px;
+    position: absolute;
+    z-index: 2;
+    top: calc(50% - 15px);
+    left: 120%;
+    opacity: 0;
+    transition: all 0.25s;
+}
+.button .tooltip::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 100%;
+    margin-top: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent var(--grey2) transparent transparent;
+}
+.button:hover .tooltip {
+    visibility: visible;
+    opacity: 1;
 }
 #blognav img {
     width: 70px;
     height: 70px;
     object-fit: cover;
-    margin: 0px 14px 14px 14px;
-}
-/*.tooltip {
-    position: fixed;
-    display: none;
-}
-#blognav:hover .tooltip {
     display: block;
-}*/
+}
 #blogcontent {
     width: 100%;
     padding-top: 10px;
@@ -106,5 +137,8 @@ h1 {
         width: calc(100% - 20px);
         text-align: center;
         padding: 10px;
+    }
+    .wrapper p {
+        font-size: 14px;
     }
 }

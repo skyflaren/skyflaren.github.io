@@ -5,8 +5,9 @@ async function getPosts() {
     let navbar = document.getElementById("blognav");
     navbar.innerHTML = "";
     for(var post of posts.posts) {
-        let button = document.createElement("span");
+        let button = document.createElement("div");
         let thumbnail = document.createElement("img");
+        button.classList.add("button");
         thumbnail.id = post.id;
         thumbnail.style.border = "solid 2px rgba(0,0,0,0)";
         thumbnail.addEventListener("click", function() {
@@ -15,12 +16,11 @@ async function getPosts() {
             recent = this.id;
             document.getElementById(recent).style.border = "solid 2px var(--gold1)";
         });
-        console.log(post.id);
-        //let text = document.createElement("span");
-        //text.classList.add("tooltip");
-        //text.innerHTML = post.title;
+        let tooltip = document.createElement("span");
+        tooltip.classList.add("tooltip");
+        tooltip.innerHTML = post.title;
         button.appendChild(thumbnail);
-        //button.appendChild(text);
+        button.appendChild(tooltip);
         thumbnail.src = "https://campagne-api.waba359.repl.co/images/"+post.thumbnail;
         thumbnail.alt = "Blog Icon";
         navbar.appendChild(button);
