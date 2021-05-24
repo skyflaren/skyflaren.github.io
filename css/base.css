@@ -71,9 +71,21 @@ hr{
     background-color: var(--grey3);
 }
 
+h1 {
+    font-size: calc(2vw + 30px);
+    font-weight: 800;
+    color: var(--grey1);
+    margin: 0px;
+}
 h2{
     font-weight: 400;
     margin-bottom: 10px;
+}
+h3{
+    font-size: calc(1vw + 20px);
+    font-weight: 600;
+    margin-bottom: 0px;
+    color: var(--grey1);
 }
 
 b{

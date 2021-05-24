@@ -51,6 +51,7 @@ async function setPost(id) {
         var image = document.createElement("img");
         imgwrapper.classList.add("imgwrapper");
         image.src = "https://campagne-api.waba359.repl.co/images/"+para.image;
+        image.alt = post.title+"Image";
         image.height = textwrapper.clientHeight;
         imgwrapper.appendChild(image);
         imgbody.appendChild(imgwrapper);
