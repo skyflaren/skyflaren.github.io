@@ -4,12 +4,14 @@ async function getClubs(filter) {
     clublist.innerHTML = "";
     for(var club of clubs.clubs) {
         if(filter == "" || filter == club.type) {
+            let hyperlink = document.createElement("a");
             let clubwrapper = document.createElement("div");
             let thumbnail = document.createElement("img");
             let text = document.createElement("div");
             let name = document.createElement("h3");
             let teacher = document.createElement("p");
             let desc = document.createElement("p");
+            hyperlink.href = club.id+"/index.html"
             clubwrapper.classList.add("club");
             thumbnail.src = "https://campagne-api.waba359.repl.co/clubs/logos/"+club.thumbnail;
             thumbnail.alt = club.name+" Logo";
@@ -24,7 +26,8 @@ async function getClubs(filter) {
             text.appendChild(desc);
             clubwrapper.appendChild(thumbnail);
             clubwrapper.appendChild(text);
-            clublist.appendChild(clubwrapper);
+            hyperlink.appendChild(clubwrapper)
+            clublist.appendChild(hyperlink);
         }
     }
 }
