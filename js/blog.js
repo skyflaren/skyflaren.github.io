@@ -47,7 +47,7 @@ async function setPost(id) {
         wrapper.classList.add("wrapper");
         imgwrapper.classList.add("img");
         textwrapper.classList.add("text");
-        image.src = (post.thumbnail == "" ? "https://campagne-api.waba359.repl.co/temp/default.png" : "https://campagne-api.waba359.repl.co/blog/"+post.id+"/images/"+para.image);
+        image.src = (para.image == "" ? "https://campagne-api.waba359.repl.co/temp/default.png" : "https://campagne-api.waba359.repl.co/blog/"+post.id+"/images/"+para.image);
         image.alt = post.title+" Image";
         text.innerHTML = para.text;
         imgwrapper.appendChild(image);
