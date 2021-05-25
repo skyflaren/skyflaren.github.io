@@ -18,7 +18,7 @@ async function getClubs(filter) {
             text.classList.add("text");
             name.innerHTML = club.name;
             teacher.innerHTML = club.teacher;
-            desc.innerHTML = club.desc;
+            desc.innerHTML = club.desc.substring(0, 140)+"...";
             text.appendChild(name);
             text.appendChild(teacher);
             text.appendChild(document.createElement("hr"));
