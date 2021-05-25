@@ -1,5 +1,5 @@
 async function getTestimonials(filter) {
-    let testifys = await (await fetch('https://campagne-api.waba359.repl.co/testimonials.json')).json();
+    let testifys = await (await fetch("https://campagne-api.waba359.repl.co/testimonials/testimonials.json")).json();
     let testifylist = document.getElementById("testimonials");
     testifylist.innerHTML = "";
     testifys.testimonials.sort((a, b) => parseInt(b.pts, 10) - parseInt(a.pts, 10));
@@ -13,14 +13,14 @@ async function getTestimonials(filter) {
             let subtitle = document.createElement("p");
             let test = document.createElement("p");
             testimonialwrapper.classList.add("testimonial");
-            thumbnail.src = "https://campagne-api.waba359.repl.co/images/"+testimonial.thumbnail;
+            thumbnail.src = "https://campagne-api.waba359.repl.co/testimonials/profile/"+(testimonial.img == "" ? "Anonymous.png" : testimonial.img);
             thumbnail.alt = testimonial.name+" Profile Photo";
             thumbnail.classList.add("img");
             text.classList.add("text");
             hyperlink.href = testimonial.link;
             hyperlink.target = "blank"
             name.innerHTML = testimonial.name;
-            subtitle.innerHTML = "Grade "+testimonial.grade + (testimonial.roles == "" ? "" : " | "+testimonial.roles);
+            subtitle.innerHTML = "Grade "+(testimonial.grade == "" ? "Unknown" : testimonial.grade) + (testimonial.roles == "" ? "" : " | "+testimonial.roles);
             test.innerHTML = testimonial.test;
             hyperlink.appendChild(name);
             text.appendChild((testimonial.link == "" ? name : hyperlink));
