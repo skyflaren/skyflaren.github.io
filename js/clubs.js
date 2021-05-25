@@ -13,7 +13,6 @@ async function getClubs(filter) {
             clubwrapper.classList.add("club");
             thumbnail.src = "https://campagne-api.waba359.repl.co/clubs/logos/"+club.thumbnail;
             thumbnail.alt = club.name+" Logo";
-            thumbnail.classList.add("img");
             thumbnail.style.borderColor = "var(--status"+club.status+")";
             text.classList.add("text");
             name.innerHTML = club.name;

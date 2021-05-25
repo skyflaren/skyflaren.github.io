@@ -15,7 +15,6 @@ async function getTestimonials(filter) {
             testimonialwrapper.classList.add("testimonial");
             thumbnail.src = "https://campagne-api.waba359.repl.co/testimonials/profile/"+(testimonial.img == "" ? "Anonymous.png" : testimonial.img);
             thumbnail.alt = testimonial.name+" Profile Photo";
-            thumbnail.classList.add("img");
             text.classList.add("text");
             hyperlink.href = testimonial.link;
             hyperlink.target = "blank"
