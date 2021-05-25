@@ -1,17 +1,12 @@
-document.addEventListener('DOMContentLoaded', function() {
-    var calendarEl = document.getElementById('calendar');
+document.addEventListener("DOMContentLoaded", function() {
+    var calendarEl = document.getElementById("calendar");
     var calendar = new FullCalendar.Calendar(calendarEl, {
-        initialView: 'dayGridMonth',
+        initialView: "dayGridMonth",
         fixedWeekCount: false,
         headerToolbar: {
             start: "title",
             center: "",
             end: "today dayGridMonth,timeGridWeek prev,next",
-        },
-        views: {
-            timeGridWeek: {
-                dayHeaderFormat: { weekday: "short", day: "numeric" },
-            },
         },
         events: [
             {
