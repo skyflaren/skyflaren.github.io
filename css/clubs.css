@@ -1,10 +1,6 @@
 #clubs {
     width: 100%;
     padding-top: 10px;
-    --status0: #5cc478;
-    --status1: #567fe8;
-    --status2: #ebc942;
-    --status3: #e85856;
 }
 .club {
     padding: 25px 0px;
@@ -39,6 +35,37 @@ h2 {
 }
 p {
     color: var(--grey2);
+}
+#wrapper {
+    display: flex;
+}
+.legend {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    overflow-wrap: normal;
+}
+.legend li {
+    display: inline-flex;
+    margin-right: 20px;
+}
+.legend span {
+    width: 16px;
+    height: 16px;
+    margin: 2px;
+    margin-right: 5px;
+}
+.legend #open {
+    background-color: var(--status0);
+}
+.legend #accepting {
+    background-color:var(--status1);
+}
+.legend #pending {
+    background-color: var(--status2);
+}
+.legend #closed {
+    background-color: var(--status3);
 }
 @media screen and (max-width: 800px) {
     #container {

@@ -29,6 +29,11 @@
     --gold2: #cbb682;
 
     --navbartext: var(--gold1);
+
+    --status0: #5cc478;
+    --status1: #567fe8;
+    --status2: #ebc942;
+    --status3: #e85856;
 }
 
 * {
