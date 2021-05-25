@@ -7,3 +7,6 @@
 #calendar {
     width: 100%;
 }
+.fc-scroller {
+    overflow-y: hidden !important;
+ }
