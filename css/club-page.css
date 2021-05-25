@@ -1,0 +1,65 @@
+h2 {
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+p {
+    color: var(--grey2);
+}
+@media screen and (max-width: 800px) {
+    #container {
+        padding: 10px;
+    }
+    #header {
+        width: calc(100% - 20px);
+        text-align: center;
+        padding: 10px;
+    }
+    .club {
+        flex-direction: column;
+    }
+    .img {
+        width: 80%;
+        border-left: None;
+        border-bottom-style: solid;
+        border-bottom-width: 10px;
+        text-align: center;
+        margin: 0px;
+        padding: 0px;
+        padding-bottom: 10px;
+    }
+    .text {
+        width: calc(90% - 20px);
+        text-align: center;
+        margin: 0px;
+        padding: 10px;
+    }
+}
+hr {
+    height: 2px;
+}
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+    border-color: #5cc478;
+    border-bottom-style: solid;
+    border-bottom-width: 10px;
+    padding-bottom: 10px;
+}
+.logo {
+  padding: 20px;
+}
+.description {
+    display:flex;
+    justify-content: center;
+    text-align: center;
+    line-height: 175%;
+    padding-top: 20px;
+}
+iframe {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+}
