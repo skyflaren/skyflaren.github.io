@@ -112,9 +112,11 @@ b{
     margin-top: 70px;
     background-color: var(--grey4);
 }
-#container {
+.container {
+    margin: auto;
     padding: 0;
-    /*border: 2px solid black;*/
+    max-width: 1200px;
+    border-color: 5px solid black;
 }
 
 .grey3{
@@ -193,12 +195,4 @@ b{
     text-decoration: none;
     color: var(--red0);
     /*opacity: 0.8;*/
-}
-
-.container{
-    margin: auto;
-    padding: 20px;
-    max-width: 1200px;
-    border-color: 5px solid blakc;
-    /*height: calc(100% - 40px);*/
 }
