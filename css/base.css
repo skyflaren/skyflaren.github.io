@@ -11,7 +11,7 @@
     --grey3: #dad8d8;
     /* light grey */
     --grey4: #f1f1f1;
-    
+
     --red0: #6b291a;
     /* dark red */
     --red1: #854435;
@@ -168,11 +168,11 @@ b{
 .foooter-icon-par{
     margin-top: 10px;
     display: flex;
-    
+
     flex-direction: row;
     -webkit-box-orient: horizontal;
     -ms-flex-direction: row;
-	justify-content:center;
+	  justify-content:center;
 }
 
 .footer-icon{
