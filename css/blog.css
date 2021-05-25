@@ -1,3 +1,6 @@
+.container {
+    padding: 0px;
+}
 #blog {
     width: 100%;
     display: flex;
@@ -119,7 +122,7 @@ h1 {
         padding: 0px;
     }
     .wrapper > .text {
-        width: calc(100% - 20px);
+        width: calc(90% - 20px);
         text-align: center;
         margin: 0px;
         padding: 10px;

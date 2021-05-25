@@ -44,9 +44,10 @@ p {
     #container {
         padding: 10px;
     }
-    #container h1 {
+    #header {
         width: calc(100% - 20px);
         text-align: center;
+        padding: 10px;
     }
     .club {
         flex-direction: column;
@@ -62,7 +63,7 @@ p {
         padding-bottom: 10px;
     }
     .text {
-        width: calc(100% - 20px);
+        width: calc(90% - 20px);
         text-align: center;
         margin: 0px;
         padding: 10px;

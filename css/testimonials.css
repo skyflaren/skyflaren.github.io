@@ -3,7 +3,7 @@
     padding-top: 10px;
 }
 .testimonial {
-    padding: 25px 0px;
+    padding: 30px 0px;
     width: 100%;
     display: flex;
     align-items: center;
@@ -22,11 +22,11 @@
     margin-left: 30px;
 }
 .text > * {
-    margin: 5px 0px;
+    margin: 8px 0px;
 }
-h2 {
-    font-weight: 400;
-    margin-bottom: 10px;
+h3 {
+    margin: 0px;
+    margin-bottom: -5px;
 }
 p {
     color: var(--grey2);
@@ -34,10 +34,12 @@ p {
 @media screen and (max-width: 800px) {
     #container {
         padding: 10px;
+        display: flex;
     }
-    #container h1 {
+    #header {
         width: calc(100% - 20px);
         text-align: center;
+        padding: 10px;
     }
     .testimonial {
         flex-direction: column;
@@ -48,7 +50,7 @@ p {
         margin: 0px;
     }
     .text {
-        width: calc(100% - 20px);
+        width: calc(90% - 20px);
         text-align: center;
         margin: 0px;
         padding: 10px;

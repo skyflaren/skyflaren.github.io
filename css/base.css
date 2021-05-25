@@ -72,10 +72,11 @@ hr{
 }
 
 h1 {
-    font-size: calc(2vw + 30px);
+    font-size: calc(1vw + 30px);
     font-weight: 800;
     color: var(--grey1);
     margin: 0px;
+    margin-bottom: 5px;
 }
 h2{
     font-weight: 400;
@@ -114,7 +115,7 @@ b{
 }
 .container {
     margin: auto;
-    padding: 0;
+    padding: 0px 20px;
     max-width: 1200px;
     border-color: 5px solid black;
 }
