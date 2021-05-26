@@ -31,6 +31,10 @@ h3 {
 p {
     color: var(--grey2);
 }
+#wrapper {
+    display: flex;
+    flex-direction: column;
+}
 @media screen and (max-width: 800px) {
     #container {
         padding: 10px;

@@ -7,9 +7,10 @@
         <link href="../css/navbar.css" rel="stylesheet" type="text/css" />
         <link href="../css/base.css" rel="stylesheet" type="text/css" />
         <link href="../css/testimonials.css" rel="stylesheet" type="text/css" />
+        <link href="../css/multiselect.css" rel="stylesheet" type="text/css" />
         <title>cuilu | Testimonials</title>
     </head>
-    <body>
+    <body onload="getTestimonials('')">
         <div id="bar">
             <div id="navbar-bkg">
                 <div id="navbar">
@@ -31,6 +32,26 @@
             <div class="container">
                 <div id="header">
                     <h1 style="padding-top: 40px">Testimonials</h1>
+                    <div id="wrapper">
+                        <form>
+                            <script src="../js/multiselect.js"></script>
+                            <div class="multiselect" id="multiselect">
+                                <div class="selectBox" onclick="showCheckBoxes()">
+                                    <select>
+                                        <option>Filter Grade</option>
+                                    </select>
+                                    <div class="overSelect"></div>
+                                </div>
+                                <div id="checkBoxes" style="display: none;">
+                                    <label for="0" onclick="update()"><input type="checkbox" id="0" name="open" value="9"/>Grade 9</label>
+                                    <label for="1" onclick="update()"><input type="checkbox" id="1" name="accepting" value="10"/>Grade 10</label>
+                                    <label for="2" onclick="update()"><input type="checkbox" id="2" name="pending" value="11"/>Grade 11</label>
+                                    <label for="3" onclick="update()"><input type="checkbox" id="3" name="closed" value="12"/>Grade 12</label>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <br>
                     <hr>
                 </div>
                 <div id="testimonials"></div>
