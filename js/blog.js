@@ -4,7 +4,7 @@ async function getPosts() {
     let posts = await (await fetch("https://campagne-api.waba359.repl.co/blog/posts.json")).json();
     let navbar = document.getElementById("blognav");
     navbar.innerHTML = "";
-    for(var post of posts.posts) {
+    for(let post of posts.posts) {
         let button = document.createElement("div");
         let thumbnail = document.createElement("img");
         button.classList.add("button");
@@ -14,7 +14,7 @@ async function getPosts() {
             setPost(this.id);
             document.getElementById(recent).style.border = "solid 2px rgba(0,0,0,0)";
             recent = this.id;
-            document.getElementById(recent).style.border = "solid 2px var(--gold1)";
+            document.getElementById(recent).style.border = "solid 2px let(--gold1)";
         });
         let tooltip = document.createElement("span");
         tooltip.classList.add("tooltip");
@@ -25,7 +25,7 @@ async function getPosts() {
         thumbnail.alt = "Blog Icon";
         navbar.appendChild(button);
     }
-    document.getElementById(recent).style.border = "solid 2px var(--gold1)";
+    document.getElementById(recent).style.border = "solid 2px let(--gold1)";
 }
 async function setPost(id) {
     let post = await (await fetch("https://campagne-api.waba359.repl.co/blog/"+id+"/"+id+".json")).json();
@@ -38,12 +38,12 @@ async function setPost(id) {
     thumbnail.alt = post.title+" Thumbnail";
     title.innerHTML = post.title;
     subtitle.innerHTML = post.date + " | " + post.subtitle;
-    for(var para of post.body) {
-        var wrapper = document.createElement("div");
-        var imgwrapper = document.createElement("div");
-        var image = document.createElement("img");
-        var textwrapper = document.createElement("div");
-        var text = document.createElement("p");
+    for(let para of post.body) {
+        let wrapper = document.createElement("div");
+        let imgwrapper = document.createElement("div");
+        let image = document.createElement("img");
+        let textwrapper = document.createElement("div");
+        let text = document.createElement("p");
         wrapper.classList.add("wrapper");
         imgwrapper.classList.add("img");
         textwrapper.classList.add("text");

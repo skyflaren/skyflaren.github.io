@@ -3,7 +3,7 @@ async function getTestimonials(filter) {
     let testifylist = document.getElementById("testimonials");
     testifylist.innerHTML = "";
     testifys.testimonials.sort((a, b) => parseInt(b.pts, 10) - parseInt(a.pts, 10));
-    for(var testimonial of testifys.testimonials) {
+    for(let testimonial of testifys.testimonials) {
         if(filter == "" || filter == testimonial.grade) {
             let hyperlink = document.createElement("a");
             let testimonialwrapper = document.createElement("div");
