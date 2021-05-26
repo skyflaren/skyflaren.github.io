@@ -3,7 +3,7 @@ async function getClubs(filter) {
     let clublist = document.getElementById("clubs");
     clublist.innerHTML = "";
     for(let club of clubs.clubs) {
-        if(filter == "" || filter.includes("S"+club.status.toString()) || filter.includes("T"+club.type.toString())) {
+        if(filter == "" || filter.includes("S"+club.status) || filter.includes("T"+club.type)) {
             let hyperlink = document.createElement("a");
             let clubwrapper = document.createElement("div");
             let thumbnail = document.createElement("img");
