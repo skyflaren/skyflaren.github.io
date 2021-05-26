@@ -2,8 +2,8 @@ async function getClubs(filter) {
     let clubs = await (await fetch("https://campagne-api.waba359.repl.co/clubs/clubs.json")).json();
     let clublist = document.getElementById("clubs");
     clublist.innerHTML = "";
-    for(var club of clubs.clubs) {
-        if(filter == "" || filter == club.type) {
+    for(let club of clubs.clubs) {
+        if(filter == "" || filter.includes("S"+club.status.toString()) || filter.includes("T"+club.type.toString())) {
             let hyperlink = document.createElement("a");
             let clubwrapper = document.createElement("div");
             let thumbnail = document.createElement("img");
@@ -31,4 +31,16 @@ async function getClubs(filter) {
         }
     }
 }
-getClubs("");
+
+function update() {
+    let checkboxes = document.getElementById("checkBoxes");
+    let options = checkboxes.getElementsByTagName("label");
+    filter = [];
+    for(let option of options) {
+        input = option.getElementsByTagName("input")[0];
+        if(input.checked) {
+            filter.push(input.value);
+        }
+    }
+    getClubs(filter);
+}

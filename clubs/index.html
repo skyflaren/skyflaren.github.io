@@ -7,9 +7,10 @@
         <link href="../css/navbar.css" rel="stylesheet" type="text/css" />
         <link href="../css/base.css" rel="stylesheet" type="text/css" />
         <link href="../css/clubs.css" rel="stylesheet" type="text/css" />
+        <link href="../css/multiselect.css" rel="stylesheet" type="text/css" />
         <title>cuilu | Clubs</title>
     </head>
-    <body>
+    <body onload="getClubs('')">
         <div id="bar">
             <div id="navbar-bkg">
                 <div id="navbar">
@@ -38,6 +39,31 @@
                             <li><span id="pending"></span>Pending Applications</li>
                             <li><span id="closed"></span>Closed Applications</li>
                         </ul>
+                        <form>
+                            <script src="../js/multiselect.js"></script>
+                            <div class="multiselect" id="multiselect">
+                                <div class="selectBox" onclick="showCheckBoxes()">
+                                    <select>
+                                        <option>Filter</option>
+                                    </select>
+                                    <div class="overSelect"></div>
+                                </div>
+                                <div id="checkBoxes" style="display: none;">
+                                    <label for="0" onclick="update()"><input type="checkbox" id="0" name="open" value="S0"/>Open Membership</label>
+                                    <label for="1" onclick="update()"><input type="checkbox" id="1" name="accepting" value="S1"/>Accepting Applications</label>
+                                    <label for="2" onclick="update()"><input type="checkbox" id="2" name="pending" value="S2"/>Pending Applications</label>
+                                    <label for="3" onclick="update()"><input type="checkbox" id="3" name="closed" value="S3"/>Closed Applications</label>
+                                    <label for="4" onclick="update()"><input type="checkbox" id="4" name="science" value="T0"/>Math & Sciences</label>
+                                    <label for="5" onclick="update()"><input type="checkbox" id="5" name="tech" value="T1"/>Technology</label>
+                                    <label for="6" onclick="update()"><input type="checkbox" id="6" name="arts" value="T2"/>Arts</label>
+                                    <label for="7" onclick="update()"><input type="checkbox" id="7" name="gym" value="T3"/>Athletics</label>
+                                    <label for="8" onclick="update()"><input type="checkbox" id="8" name="social" value="T4"/>Humanities</label>
+                                    <label for="9" onclick="update()"><input type="checkbox" id="9" name="language" value="T5"/>Languages</label>
+                                    <label for="10" onclick="update()"><input type="checkbox" id="10" name="business" value="T6"/>Business</label>
+                                    <label for="11" onclick="update()"><input type="checkbox" id="11" name="culture" value="T7"/>Cultural</label>
+                                </div>
+                            </div>
+                        </form>
                     </div>
                     <br>
                     <hr>

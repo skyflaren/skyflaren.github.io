@@ -38,6 +38,7 @@ p {
 }
 #wrapper {
     display: flex;
+    flex-direction: column;
 }
 .legend {
     list-style: none;
