@@ -4,7 +4,7 @@ async function getTestimonials(filter) {
     testifylist.innerHTML = "";
     testifys.testimonials.sort((a, b) => parseInt(b.pts, 10) - parseInt(a.pts, 10));
     for(let testimonial of testifys.testimonials) {
-        if(filter == "" || filter == testimonial.grade) {
+        if(filter == "" || filter.includes(testimonial.grade)) {
             let hyperlink = document.createElement("a");
             let testimonialwrapper = document.createElement("div");
             let thumbnail = document.createElement("img");
@@ -32,4 +32,16 @@ async function getTestimonials(filter) {
         }
     }
 }
-getTestimonials("");
+
+function update() {
+    let checkboxes = document.getElementById("checkBoxes");
+    let options = checkboxes.getElementsByTagName("label");
+    filter = [];
+    for(let option of options) {
+        input = option.getElementsByTagName("input")[0];
+        if(input.checked) {
+            filter.push(input.value);
+        }
+    }
+    getTestimonials(filter);
+}
