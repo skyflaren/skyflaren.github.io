@@ -8,6 +8,9 @@
     flex-direction: row-reverse;
     color: var(--gold2);
     box-shadow: 0 0 8px 0 var(--grey1);
+
+    position: relative;
+    z-index: 3;
 }
 
 #navbar-bkg{
@@ -84,4 +87,45 @@
 	position:absolute;
 	background-color: var(--gold1);
 	display: none;
+}
+
+#col{
+    display: none;
+}
+
+@media (min-width: 780px) {
+    #col{
+        display: block;
+    }
+}
+
+#hamburger-par{
+    width: calc(100% - 20px);
+    padding: 10px;
+
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    align-items: center;
+    z-index: 2;
+    background-color: var(--grey2);
+}
+
+.hamburger-icon{
+    display: block;
+}
+
+@media (min-width: 780px) {
+    .hamburger-icon{
+        display: none;
+    }
+}
+
+.hamburger-item{
+    position: relative;
+    font-weight: 500;
+    color: var(--navbartext);
+    
+    text-decoration: none;
+    padding: 5px 0px;
 }
