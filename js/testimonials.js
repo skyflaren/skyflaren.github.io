@@ -17,7 +17,7 @@ async function getTestimonials(filter) {
             return 1;
     });
     for(let testimonial of testifys.testimonials) {
-        if(filter == "" || filter.includes(testimonial.grade)) {
+        if(filter == "" || filter.includes(testimonial.grade) || (filter.includes("alumni") && testimonial.grade.includes("Alumni")) || (filter.includes("anon") && testimonial.grade == "")) {
             let hyperlink = document.createElement("a");
             let testimonialwrapper = document.createElement("div");
             let thumbnail = document.createElement("img");
@@ -32,7 +32,7 @@ async function getTestimonials(filter) {
             hyperlink.href = testimonial.link;
             hyperlink.target = "blank"
             name.innerHTML = testimonial.name;
-            subtitle.innerHTML = "Grade "+(testimonial.grade == "" ? "Unknown" : testimonial.grade) + (testimonial.roles == "" ? "" : " | "+testimonial.roles);
+            subtitle.innerHTML = (testimonial.grade.includes("Alumni") ? testimonial.grade : "Grade "+(testimonial.grade == "" ? "Unknown" : testimonial.grade)) + (testimonial.roles == "" ? "" : " | "+testimonial.roles);
             test.innerHTML = testimonial.test;
             hyperlink.appendChild(name);
             text.appendChild((testimonial.link == "" ? name : hyperlink));
