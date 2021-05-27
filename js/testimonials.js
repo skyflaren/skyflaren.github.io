@@ -2,7 +2,20 @@ async function getTestimonials(filter) {
     let testifys = await (await fetch("https://campagne-api.waba359.repl.co/testimonials/testimonials.json")).json();
     let testifylist = document.getElementById("testimonials");
     testifylist.innerHTML = "";
-    testifys.testimonials.sort((a, b) => parseInt(b.pts, 10) - parseInt(a.pts, 10));
+    testifys.testimonials.sort(function (a, b) {
+        if(parseInt(a.pts, 10) > parseInt(b.pts, 10))
+            return -1;
+        if(parseInt(a.pts, 10) < parseInt(b.pts, 10))
+            return 1;
+        if((a.roles.match(/,/g)||[]).length > (b.roles.match(/,/g)||[]).length)
+            return -1;
+        if((a.roles.match(/,/g)||[]).length < (b.roles.match(/,/g)||[]).length)
+            return 1;
+        if(b.roles.length == 0 && a.roles.length > 0)
+            return -1;
+        if(a.roles.length == 0 && b.roles.length > 0)
+            return 1;
+    });
     for(let testimonial of testifys.testimonials) {
         if(filter == "" || filter.includes(testimonial.grade)) {
             let hyperlink = document.createElement("a");
