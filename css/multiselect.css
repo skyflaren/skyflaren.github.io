@@ -1,3 +1,7 @@
+form {
+    display: flex;
+}
+
 .multiselect {
     width: 250px;
 }
@@ -40,4 +44,12 @@
 }
 #checkBoxes input {
     margin-right: 8px;
+}
+@media screen and (max-width: 800px) {
+    form {
+        justify-content: center;
+    }
+    .multiselect {
+        text-align: left;
+    }
 }

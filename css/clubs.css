@@ -80,7 +80,7 @@ p {
     .club {
         flex-direction: column;
     }
-    img {
+    .container img {
         width: 80%;
         border-left: None;
         border-bottom-style: solid;
