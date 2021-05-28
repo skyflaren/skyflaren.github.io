@@ -69,9 +69,6 @@ p {
     background-color: var(--status3);
 }
 @media screen and (max-width: 800px) {
-    #container {
-        padding: 10px;
-    }
     #header {
         width: calc(100% - 20px);
         text-align: center;
