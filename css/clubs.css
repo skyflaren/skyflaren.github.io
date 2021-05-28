@@ -81,7 +81,7 @@ p {
         flex-direction: column;
     }
     .container img {
-        width: 80%;
+        width: 60%;
         border-left: None;
         border-bottom-style: solid;
         border-bottom-width: 10px;
@@ -95,5 +95,8 @@ p {
         text-align: center;
         margin: 0px;
         padding: 10px;
+    }
+    .noimg {
+        height: 0px;
     }
 }

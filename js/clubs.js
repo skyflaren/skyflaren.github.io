@@ -13,10 +13,15 @@ async function getClubs(filter) {
             let desc = document.createElement("p");
             hyperlink.href = club.id+"/index.html"
             clubwrapper.classList.add("club");
-            thumbnail.src = "https://campagne-api.waba359.repl.co/clubs/logos/"+club.thumbnail;
-            thumbnail.alt = club.name+" Logo";
-            thumbnail.style.borderColor = "var(--status"+club.status+")";
+            if(club.thumbnail != "") {
+                thumbnail.src = "https://campagne-api.waba359.repl.co/clubs/logos/"+club.thumbnail;
+                thumbnail.alt = club.name+" Logo";
+            } else {
+                thumbnail.src = "https://campagne-api.waba359.repl.co/temp/default.png";
+                thumbnail.classList.add("noimg");
+            }
             thumbnail.draggable = false;
+            thumbnail.style.borderColor = "var(--status"+club.status+")";
             text.classList.add("text");
             name.innerHTML = club.name;
             teacher.innerHTML = club.teacher;

@@ -70,7 +70,7 @@
     clear: both;
     display: table;
 }
-#square {
+.square {
     width: 50%;
     padding-bottom: 50%;
     position: relative;
@@ -113,13 +113,22 @@ h1 {
     margin: 10px 0px;
 }
 @media screen and (max-width: 800px) {
+    #blogbody {
+        padding-bottom: 50px;
+    }
     .wrapper {
         flex-direction: column;
+        padding: 5px 0px;
+    }
+    #header {
+        padding: 0px;
+        padding-top: 50px;
     }
     .wrapper > .img {
         width: 80%;
         text-align: center;
         padding: 0px;
+        padding-bottom: 20px;
     }
     .wrapper > .text {
         width: calc(90% - 20px);
@@ -127,7 +136,7 @@ h1 {
         margin: 0px;
         padding: 10px;
     }
-    #square {
+    .square {
         width: 80%;
         padding-bottom: 80%;
     }
@@ -143,5 +152,11 @@ h1 {
     }
     .wrapper p {
         font-size: 14px;
+    }
+    .noimg {
+        display: none;
+    }
+    .wrapper > .noimg {
+        padding: 0px;
     }
 }

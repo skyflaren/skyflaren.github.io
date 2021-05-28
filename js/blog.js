@@ -35,9 +35,15 @@ async function setPost(id) {
     let subtitle = document.getElementById("subtitle");
     let blogbody = document.getElementById("blogbody");
     blogbody.innerHTML = "";
-    thumbnail.src = (post.thumbnail == "" ? "https://campagne-api.waba359.repl.co/temp/default.png" : "https://campagne-api.waba359.repl.co/blog/"+post.id+"/images/"+post.thumbnail);
-    thumbnail.alt = post.title+" Thumbnail";
-    thumbnail.draggable = false;
+    if(post.thumbnail != "") {
+        thumbnail.src = "https://campagne-api.waba359.repl.co/blog/"+post.id+"/images/"+post.thumbnail;
+        thumbnail.alt = post.title+" Thumbnail";
+        thumbnail.draggable = false;
+    } else {
+        thumbnail.style.display = "none";
+        square = document.getElementById("square");
+        square.classList.add("noimg");
+    }
     title.innerHTML = post.title;
     subtitle.innerHTML = post.date + " | " + post.subtitle;
     for(let para of post.body) {
@@ -49,9 +55,15 @@ async function setPost(id) {
         wrapper.classList.add("wrapper");
         imgwrapper.classList.add("img");
         textwrapper.classList.add("text");
-        image.src = (para.image == "" ? "https://campagne-api.waba359.repl.co/temp/default.png" : "https://campagne-api.waba359.repl.co/blog/"+post.id+"/images/"+para.image);
-        image.alt = post.title+" Image";
-        image.draggable = false;
+        if(para.image != "") {
+            image.src = "https://campagne-api.waba359.repl.co/blog/"+post.id+"/images/"+para.image;
+            image.alt = post.title+" Image";
+            image.draggable = false;
+        } else {
+            console.log(para.image);
+            image.style.display = "none";
+            imgwrapper.classList.add("noimg");
+        }
         text.innerHTML = para.text;
         imgwrapper.appendChild(image);
         textwrapper.appendChild(text);

@@ -4,6 +4,7 @@ form {
 
 .multiselect {
     width: 250px;
+    padding-top: 10px;
 }
 
 .selectBox {
