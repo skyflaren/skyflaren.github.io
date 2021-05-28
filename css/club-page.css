@@ -13,7 +13,7 @@ p {
 hr {
     height: 2px;
 }
-.container img {
+.logo img {
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -69,4 +69,28 @@ iframe {
     iframe {
         width: 90%;
     }
+}
+.contact-list{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+  margin-bottom: 30px;
+}
+
+.contact{
+	width: auto;
+	display: flex;
+	align-items: center;
+	margin-top: 30px;
+}
+
+.contact-icon{
+	height: 3vh;
+	width: 3vh;
+}
+
+.contact-text{
+	padding-left: 10px;
+	font-size: 18px;
+	opacity: 0.8;
 }

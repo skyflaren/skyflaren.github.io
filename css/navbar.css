@@ -4,6 +4,8 @@
     height: 70px;
     
     display: flex;
+    display: -webkit-flex;
+    -webkit-flex-wrap: wrap;
     -webkit-flex-direction: row-reverse;
     flex-direction: row-reverse;
     color: var(--gold1);
@@ -99,6 +101,8 @@
 
     display: none;
     flex-direction: column;
+    -webkit-flex-wrap: wrap;
+    -webkit-flex-direction: column;
     position: absolute;
     align-items: center;
     z-index: 2;
@@ -107,9 +111,9 @@
 
 .hamburger-icon {
     display: none;
-    position: absolute;
     width: 24px;
     opacity: 0.68;
+    margin-top: -25px;
 }
 
 .hamburger-icon:hover {
