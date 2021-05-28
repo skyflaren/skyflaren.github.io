@@ -83,7 +83,7 @@ iframe {
         flex-direction: column;
     }
     .logo img {
-        width: 60%;
+        width: 80%;
     }
     .text {
         width: calc(90% - 20px);
