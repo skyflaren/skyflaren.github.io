@@ -17,21 +17,31 @@
                         <span class="home-name any-item">CUILU</span>
                         <img class="home-logo any-item" draggable="false" src="../../img/logo-dark.png"/>
                     </div></a>
-                    <a class="any-item item-navbar" href="../../about/index.html">ABOUT</a>
-                    <a class="any-item item-navbar" href="../../testimonials/index.html">TESTIMONIALS</a>
-                    <a class="any-item item-navbar" href="../../calendar/index.html">CALENDAR</a>
-                    <a class="any-item bold-navbar">CLUBS</a>
-                    <a class="any-item item-navbar" href="../../blog/index.html">BLOG</a>
+                    <img src="../../img/hamburger-icon.svg" class="hamburger-icon any-item" onclick="collapse()">
+                    <div id="col">
+                        <a class="any-item item-navbar" href="../../blog/index.html">BLOG</a>
+                        <a class="any-item bold-navbar">CLUBS</a>
+                        <a class="any-item item-navbar" href="../../calendar/index.html">CALENDAR</a>
+                        <a class="any-item item-navbar" href="../../testimonials/index.html">TESTIMONIALS</a>
+                        <a class="any-item item-navbar" href="../../about/index.html">ABOUT</a>
+                    </div>
                 </div>
-            </div>
             <div id="slider"></div>
+            <div id="hamburger-par">
+                <a class="hamburger-item" href="../../blog/index.html">BLOG</a>
+                <a class="hamburger-item" href="../../clubs/index.html">CLUBS</a>
+                <a class="hamburger-item" href="../../calendar/index.html">CALENDAR</a>
+                <a class="hamburger-item" href="../../testimonials/index.html">TESTIMONIALS</a>
+                <a class="hamburger-item" href="../../about/index.html">ABOUT</a>
+            </div>
             <script src="../../js/slider.js"></script>
+            <script src="../../js/hamburger.js"></script>
         </div>
         <div id="bg">
             <div class="container">
                 <div id="header">
                     <h1 style="padding-top: 40px">Mackenzie Math Club</h1>
-                    <a href="../index.html">❮ Back to Clubs</a>
+                    <a id="back-link" href="../index.html">❮ Back to Clubs</a>
                     <br><br>
                     <hr>
                 </div>
