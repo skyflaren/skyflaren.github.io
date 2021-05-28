@@ -70,6 +70,13 @@ iframe {
         width: 90%;
     }
 }
+.slideshow{
+  padding-bottom: 20px;
+}
+.slideshow iframe{
+  width: 90vw;
+  height: 50vh;
+}
 .contact-list{
 	display: flex;
 	flex-direction: column;
