@@ -14,7 +14,7 @@ async function getPosts() {
             setPost(this.id);
             document.getElementById(recent).style.border = "solid 2px rgba(0,0,0,0)";
             recent = this.id;
-            document.getElementById(recent).style.border = "solid 2px let(--gold1)";
+            document.getElementById(recent).style.border = "solid 2px var(--gold1)";
         });
         let tooltip = document.createElement("span");
         tooltip.classList.add("tooltip");
@@ -25,7 +25,7 @@ async function getPosts() {
         thumbnail.alt = "Blog Icon";
         navbar.appendChild(button);
     }
-    document.getElementById(recent).style.border = "solid 2px let(--gold1)";
+    document.getElementById(recent).style.border = "solid 2px var(--gold1)";
 }
 async function setPost(id) {
     let post = await (await fetch("https://campagne-api.waba359.repl.co/blog/"+id+"/"+id+".json")).json();

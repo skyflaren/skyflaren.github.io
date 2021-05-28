@@ -135,7 +135,7 @@ b{
 }
 
 .footer{
-    height: 230px;
+    /*height: 230px;*/
     width: 100%;
     background-color: var(--grey1);
     display: flex;
@@ -168,23 +168,24 @@ b{
 
 .foooter-icon-par{
     margin-top: 10px;
+    padding-bottom: 40px;
     display: flex;
 
     flex-direction: row;
     -webkit-box-orient: horizontal;
     -ms-flex-direction: row;
-	  justify-content:center;
+	justify-content:center;
 }
 
 .footer-icon{
     height: 3vh;
     width: 3vh;
     margin: 2vh calc(0.25vh + 0.25vw);
-    opacity: 0.9;
+    opacity: 0.68;
 }
 
 .footer-icon:hover{
-    opacity: 0.6;
+    opacity: 1;
     cursor: pointer;
 }
 

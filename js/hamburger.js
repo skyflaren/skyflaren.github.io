@@ -9,7 +9,7 @@ function collapse() {
 
 function resized(){
   console.log(parseInt(window.innerWidth))
-  if (parseInt(window.innerWidth) >= 780){
+  if (parseInt(window.innerWidth) >= 800){
     document.getElementById("hamburger-par").style.display = "none";
   console.log(document.getElementById("hamburger-par").style.display);
   }

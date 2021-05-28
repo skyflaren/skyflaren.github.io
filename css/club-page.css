@@ -5,10 +5,11 @@ h2 {
 p {
     color: var(--grey2);
 }
-a:visited {
-    color: inherit !important;
+#back-link {
+    color: var(--gold1);
     text-decoration: none;
 }
+
 hr {
     height: 2px;
 }
