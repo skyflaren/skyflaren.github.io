@@ -10,6 +10,7 @@ async function getPosts() {
         button.classList.add("button");
         thumbnail.id = post.id;
         thumbnail.style.border = "solid 2px rgba(0,0,0,0)";
+        thumbnail.draggable = false;
         thumbnail.addEventListener("click", function() {
             setPost(this.id);
             document.getElementById(recent).style.border = "solid 2px rgba(0,0,0,0)";
@@ -36,6 +37,7 @@ async function setPost(id) {
     blogbody.innerHTML = "";
     thumbnail.src = (post.thumbnail == "" ? "https://campagne-api.waba359.repl.co/temp/default.png" : "https://campagne-api.waba359.repl.co/blog/"+post.id+"/images/"+post.thumbnail);
     thumbnail.alt = post.title+" Thumbnail";
+    thumbnail.draggable = false;
     title.innerHTML = post.title;
     subtitle.innerHTML = post.date + " | " + post.subtitle;
     for(let para of post.body) {
@@ -49,6 +51,7 @@ async function setPost(id) {
         textwrapper.classList.add("text");
         image.src = (para.image == "" ? "https://campagne-api.waba359.repl.co/temp/default.png" : "https://campagne-api.waba359.repl.co/blog/"+post.id+"/images/"+para.image);
         image.alt = post.title+" Image";
+        image.draggable = false;
         text.innerHTML = para.text;
         imgwrapper.appendChild(image);
         textwrapper.appendChild(text);

@@ -16,6 +16,7 @@ async function getClubs(filter) {
             thumbnail.src = "https://campagne-api.waba359.repl.co/clubs/logos/"+club.thumbnail;
             thumbnail.alt = club.name+" Logo";
             thumbnail.style.borderColor = "var(--status"+club.status+")";
+            thumbnail.draggable = false;
             text.classList.add("text");
             name.innerHTML = club.name;
             teacher.innerHTML = club.teacher;
