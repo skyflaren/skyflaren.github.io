@@ -89,8 +89,8 @@
 	display: none;
 }
 
-#col{
-    display: none;
+#col {
+    display: block;
 }
 
 #hamburger-par{
@@ -105,7 +105,8 @@
     background-color: var(--grey2);
 }
 
-.hamburger-icon{
+.hamburger-icon {
+    display: none;
     position: absolute;
     width: 24px;
     opacity: 0.68;
@@ -129,11 +130,11 @@
     opacity: 1;
 }
 
-@media (min-width: 800px) {
+@media screen and (max-width: 800px) {
     #col{
-        display: block;
+        display: none;
     }
     .hamburger-icon{
-        display: none;
+        display: block;
     }
 }
