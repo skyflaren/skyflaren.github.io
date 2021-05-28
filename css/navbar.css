@@ -93,12 +93,6 @@
     display: none;
 }
 
-@media (min-width: 800px) {
-    #col{
-        display: block;
-    }
-}
-
 #hamburger-par{
     width: calc(100% - 20px);
     padding: 10px;
@@ -121,12 +115,6 @@
     opacity: 1;
 }
 
-@media (min-width: 800px) {
-    .hamburger-icon{
-        display: none;
-    }
-}
-
 .hamburger-item{
     position: relative;
     font-weight: 500;
@@ -139,4 +127,13 @@
 
 .hamburger-item:hover {
     opacity: 1;
+}
+
+@media (min-width: 800px) {
+    #col{
+        display: block;
+    }
+    .hamburger-icon{
+        display: none;
+    }
 }
