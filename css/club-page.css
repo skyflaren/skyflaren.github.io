@@ -38,7 +38,38 @@ iframe {
     margin-right: auto;
     padding: 20px;
 }
-
+@media screen and (max-width: 800px) {
+    #container {
+        padding: 10px;
+    }
+    #header {
+        width: calc(100% - 20px);
+        text-align: center;
+        padding: 10px;
+    }
+    .club {
+        flex-direction: column;
+    }
+    .img {
+        width: 80%;
+        border-left: None;
+        border-bottom-style: solid;
+        border-bottom-width: 10px;
+        text-align: center;
+        margin: 0px;
+        padding: 0px;
+        padding-bottom: 10px;
+    }
+    .text {
+        width: calc(90% - 20px);
+        text-align: center;
+        margin: 0px;
+        padding: 10px;
+    }
+    iframe {
+        width: 90%;
+    }
+}
 .contact-list{
 	display: flex;
 	flex-direction: column;
@@ -62,29 +93,4 @@ iframe {
 	padding-left: 10px;
 	font-size: 18px;
 	opacity: 0.8;
-}
-@media screen and (max-width: 800px) {
-    #container {
-        padding: 10px;
-    }
-    #header {
-        width: calc(100% - 20px);
-        text-align: center;
-        padding: 10px;
-    }
-    .club {
-        flex-direction: column;
-    }
-    .logo img {
-        width: 60%;
-    }
-    .text {
-        width: calc(90% - 20px);
-        text-align: center;
-        margin: 0px;
-        padding: 10px;
-    }
-    iframe {
-        width: 90%;
-    }
 }
