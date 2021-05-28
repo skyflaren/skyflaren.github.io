@@ -26,6 +26,24 @@ document.addEventListener("DOMContentLoaded", function() {
                 start: "2021-06-02",
                 end: "2021-06-04",
                 color: "var(--status1)"
+            },
+            {
+                title: "MAC Application closes",
+                start: "2021-05-31",
+                end: "2021-05-31",
+                color: "var(--status1)"
+            },
+            {
+                title: "Arts Council Application closes",
+                start: "2021-05-31",
+                end: "2021-05-31",
+                color: "var(--status3)"
+            },
+            {
+                title: "TED Club Annual Conference",
+                start: "2021-05-21",
+                end: "2021-05-21",
+                color: "var(--status3)"
             }
         ]
     });
