@@ -17,21 +17,31 @@
                         <span class="home-name any-item">CUILU</span>
                         <img class="home-logo any-item" draggable="false" src="../../img/logo-dark.png"/>
                     </div></a>
-                    <a class="any-item item-navbar" href="../../about/index.html">ABOUT</a>
-                    <a class="any-item item-navbar" href="../../testimonials/index.html">TESTIMONIALS</a>
-                    <a class="any-item item-navbar" href="../../calendar/index.html">CALENDAR</a>
-                    <a class="any-item bold-navbar">CLUBS</a>
-                    <a class="any-item item-navbar" href="../../blog/index.html">BLOG</a>
+                    <img src="../../img/hamburger-icon.svg" class="hamburger-icon any-item" onclick="collapse()">
+                    <div id="col">
+                        <a class="any-item item-navbar" href="../../blog/index.html">BLOG</a>
+                        <a class="any-item bold-navbar">CLUBS</a>
+                        <a class="any-item item-navbar" href="../../calendar/index.html">CALENDAR</a>
+                        <a class="any-item item-navbar" href="../../testimonials/index.html">TESTIMONIALS</a>
+                        <a class="any-item item-navbar" href="../../about/index.html">ABOUT</a>
+                    </div>
                 </div>
-            </div>
             <div id="slider"></div>
+            <div id="hamburger-par">
+                <a class="hamburger-item" href="../../blog/index.html">BLOG</a>
+                <a class="hamburger-item" href="../../clubs/index.html">CLUBS</a>
+                <a class="hamburger-item" href="../../calendar/index.html">CALENDAR</a>
+                <a class="hamburger-item" href="../../testimonials/index.html">TESTIMONIALS</a>
+                <a class="hamburger-item" href="../../about/index.html">ABOUT</a>
+            </div>
             <script src="../../js/slider.js"></script>
+            <script src="../../js/hamburger.js"></script>
         </div>
         <div id="bg">
             <div class="container">
                 <div id="header">
                     <h1 style="padding-top: 40px">Mackenzie HOSA</h1>
-                    <a href="../index.html">❮ Back to Clubs</a>
+                    <a id="back-link" href="../index.html">❮ Back to Clubs</a>
                     <br><br>
                     <hr>
                 </div>
@@ -62,9 +72,9 @@
             <div class="footer-title-par"><p class="footer-title">This website was made from scratch by <span style="font-weight: 700">Justin Lu, Nicole Cui, Eric Shim, and Diana Lin</span> as a mock for an improved student website :D</p></div>
             <hr class="footer-bar">
             <div class="foooter-icon-par">
-                <a class="footer-name" href="https://www.instagram.com/cuilu.vp/" target="blank"><img class="footer-icon" src="../../img/insta-icon.svg"></a>
-                <a class="footer-name" href="https://discord.gg/DT6vdmPJw4" target="blank"><img class="footer-icon" src="../../img/discord-icon.svg"></a>
-                <a class="footer-name" href="mailto:cuilu@justinlu.ca" target="blank"><img class="footer-icon" src="../../img/email-icon.svg"></a>
+                <a class="footer-name" href="https://www.instagram.com/cuilu.vp/" target="_blank"><img class="footer-icon" src="../img/insta-icon.svg"></a>
+                <a class="footer-name" href="https://discord.gg/DT6vdmPJw4" target="_blank"><img class="footer-icon" src="../img/discord-icon.svg"></a>
+                <a class="footer-name" href="mailto:cuilu@justinlu.ca" target="_blank"><img class="footer-icon" src="../img/email-icon.svg"></a>
             </div>
         </div>
     </body>

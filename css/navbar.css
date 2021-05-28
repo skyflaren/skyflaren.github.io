@@ -89,14 +89,8 @@
 	display: none;
 }
 
-#col{
-    display: none;
-}
-
-@media (min-width: 800px) {
-    #col{
-        display: block;
-    }
+#col {
+    display: block;
 }
 
 #hamburger-par{
@@ -111,7 +105,8 @@
     background-color: var(--grey2);
 }
 
-.hamburger-icon{
+.hamburger-icon {
+    display: none;
     position: absolute;
     width: 24px;
     opacity: 0.68;
@@ -119,12 +114,6 @@
 
 .hamburger-icon:hover {
     opacity: 1;
-}
-
-@media (min-width: 800px) {
-    .hamburger-icon{
-        display: none;
-    }
 }
 
 .hamburger-item{
@@ -139,4 +128,13 @@
 
 .hamburger-item:hover {
     opacity: 1;
+}
+
+@media screen and (max-width: 800px) {
+    #col{
+        display: none;
+    }
+    .hamburger-icon{
+        display: block;
+    }
 }
