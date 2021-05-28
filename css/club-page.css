@@ -23,7 +23,8 @@ hr {
     padding-bottom: 10px;
 }
 .logo {
-  padding: 20px;
+    padding: 20px;
+    width: 100%;
 }
 .description {
     display:flex;
@@ -83,7 +84,7 @@ iframe {
         flex-direction: column;
     }
     .logo img {
-        width: 100%;
+        width: 60%;
     }
     .text {
         width: calc(90% - 20px);
