@@ -10,6 +10,10 @@ p {
     text-decoration: none;
 }
 
+#back-link:hover{
+    filter: brightness(85%);
+}
+
 hr {
     height: 2px;
 }
