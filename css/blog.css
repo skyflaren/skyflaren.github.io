@@ -56,7 +56,7 @@
     display: block;
 }
 #blogcontent {
-    width: 100%;
+    width: calc(100% - 100px);
     padding: 10px 0px 30px;
 }
 .wrapper {
