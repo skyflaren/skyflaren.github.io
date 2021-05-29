@@ -116,10 +116,10 @@ nav.addEventListener("mousemove", function(evt) {
          
          if(mouseX >= min){
              if(propFlt(slider.style.left) < mouseX-(sw/2)){
-                 slider.style.left = propFlt(slider.style.left)+(propFlt(slider.style.left)-mouseX-(sw/2))/2 + "px";
+                 slider.style.left = propFlt(slider.style.left)+(mouseX+(sw/2)-propFlt(slider.style.left))/2 + "px";
              }
              else if(propFlt(slider.style.left) > mouseX-(sw/2)){
-                 slider.style.left = propFlt(slider.style.left)+(mouseX-(sw/2)-propFlt(slider.style.left))/2 + "px";
+                 slider.style.left = propFlt(slider.style.left)-(propFlt(slider.style.left)-mouseX+(sw/2))/2 + "px";
              }
              else slider.style.left = mouseX-(sw/2) + "px";
          }
