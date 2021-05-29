@@ -33,7 +33,7 @@ for (let item of document.getElementsByClassName("item-navbar")) {
                slider.style.right = "auto";
            }
            else {
-               slider.style.right = Math.round(document.body.scrollWidth - coord.right)+"px";
+               slider.style.right = Math.round(document.body.scrollWidth - coord.right-15)+"px";
                slider.style.left = "auto";
            }
            
@@ -70,7 +70,7 @@ for (let item of document.getElementsByClassName("item-navbar")) {
                 slider.style.right = "auto";
             }
             else {
-                slider.style.right = Math.round(document.body.scrollWidth - coord.right)+"px";
+                slider.style.right = Math.round(document.body.scrollWidth - coord.right-15)+"px";
                 slider.style.left = "auto";
             }
             
@@ -104,7 +104,8 @@ nav.addEventListener("mousemove", function(evt) {
      for (let item of document.getElementsByClassName("item-navbar")) {
 		let coord = item.getBoundingClientRect();
 		// console.log(min + " " + coord.left);
-		min = (coord.left < min || min == 0 || Math.round(min) == 20 ? coord.left : min);
+        min = coord.left;
+		// min = (coord.left < min || min == 0 || Math.round(min) == 20 ? coord.left : min);
 		inbtwn &= (mouseX+1 < coord.left || mouseX-1 > coord.right);
      }
 
@@ -115,11 +116,11 @@ nav.addEventListener("mousemove", function(evt) {
          slider.style.right = 'auto';
          
          if(mouseX >= min){
-             if(propFlt(slider.style.left) < mouseX-(sw/2)){
-                 slider.style.left = propFlt(slider.style.left)+(mouseX+(sw/2)-propFlt(slider.style.left))/2 + "px";
+             if(propFlt(slider.style.left) < mouseX-(sw/2) - 1){
+                 slider.style.left = propFlt(slider.style.left)+((mouseX-(sw/2))-propFlt(slider.style.left))/2 + "px";
              }
-             else if(propFlt(slider.style.left) > mouseX-(sw/2)){
-                 slider.style.left = propFlt(slider.style.left)-(propFlt(slider.style.left)-mouseX+(sw/2))/2 + "px";
+             else if(propFlt(slider.style.left) > mouseX-(sw/2) + 1){
+                 slider.style.left = propFlt(slider.style.left)-(propFlt(slider.style.left)-(mouseX-(sw/2)))/2 + "px";
              }
              else slider.style.left = mouseX-(sw/2) + "px";
          }
