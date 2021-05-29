@@ -61,15 +61,21 @@ iframe {
 	align-items: center;
     margin-bottom: 30px;
 }
-
+#contact-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+}
 .contact{
 	width: auto;
 	display: flex;
-	align-items: center;
 	margin-top: 30px;
 	opacity: 1;
 }
-
+.contact a {
+	display: flex;
+	align-items: left;
+}
 .contact:hover{
   filter: brightness(85%);
 }

@@ -13,7 +13,7 @@ async function setClub(id) {
     let desc = document.getElementById("desc");
     let videowrapper = document.getElementById("video");
     let slidewrapper = document.getElementById("slideshow");
-    let contacts = document.getElementById("contact-list");
+    let contacts = document.getElementById("contact-wrapper");
     let video = document.createElement("iframe");
     let slideshow = document.createElement("iframe");
 
