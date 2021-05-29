@@ -42,18 +42,18 @@ iframe {
     margin-left: auto;
     margin-right: auto;
     padding: 20px;
+    border-style: none;
 }
-
+.video iframe {
+    width: 560px;
+    height: 315px;
+}
 .slideshow{
     padding-bottom: 20px;
 }
 .slideshow iframe{
     width: 60vw;
     height: calc(60vw*0.6);
-    border-style: none;
-    allowfullscreen: "true";
-    mozallowfullscreen: "true";
-    webkitallowfullscreen: "true";
 }
 .contact-list{
 	display: flex;

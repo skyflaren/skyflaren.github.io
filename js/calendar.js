@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 start: "2021-06-02",
                 end: "2021-06-04",
                 description: "Lorem ipsum dolor",
-                color: "var(--status1)"
+                color: "var(--status2)"
             },
             {
                 title: "MAC Application closes",
@@ -41,7 +41,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 title: "TED Club Annual Conference",
                 start: "2021-05-21",
                 description: "Lorem ipsum dolor",
-                color: "var(--status3)"
+                color: "var(--status0)"
             }
         ],
         /*

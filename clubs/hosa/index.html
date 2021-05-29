@@ -7,9 +7,8 @@
         <link href="../../css/navbar.css" rel="stylesheet" type="text/css" />
         <link href="../../css/base.css" rel="stylesheet" type="text/css" />
         <link href="../../css/club-page.css" rel="stylesheet" type="text/css" />
-        <title>cuilu | HOSA</title>
     </head>
-    <body onresize="resized()">
+    <body onresize="resized()" onload="setClub('hosa')">
         <div id="bar">
             <div id="navbar-bkg">
                 <div id="navbar">
@@ -40,34 +39,24 @@
         <div id="bg">
             <div class="container">
                 <div id="header">
-                    <h1 style="padding-top: 40px">Mackenzie HOSA</h1>
+                    <h1 id="name" style="padding-top: 40px"></h1>
                     <a id="back-link" href="../index.html">❮ Back to Clubs</a>
                     <br><br>
                     <hr>
                 </div>
                 <div class="logo">
-                    <img src=" https://campagne-api.waba359.repl.co/clubs/logos/HOSA.png" alt="HOSA Logo" style="border-color: var(--status3);">
+                    <img id="clublogo">
                 </div>
                 <hr>
-                <div class="description">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer felis mauris, congue sit amet consequat ac, sagittis ac ex. Aliquam a augue purus. Cras id nulla et arcu congue tincidunt vel ut dolor. Aenean at mi eget tellus aliquet dictum. Vivamus gravida volutpat imperdiet. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Phasellus ac turpis viverra, tincidunt odio interdum, scelerisque justo. Quisque nec elementum velit. Duis consequat, odio nec bibendum lacinia, lacus massa suscipit urna, quis cursus leo lectus in magna. Aliquam luctus sem vitae erat volutpat, in auctor nisl mollis. Aliquam erat volutpat. Integer massa felis, finibus sit amet efficitur non, feugiat quis augue. In ac metus faucibus, ultricies tellus et, aliquam lacus. Nam vehicula tortor at rutrum dictum. Vivamus dapibus velit sit amet enim scelerisque, in ullamcorper augue convallis. Maecenas congue lorem sem, quis commodo magna malesuada ac. Nam rutrum erat bibendum justo interdum, sed hendrerit nulla porttitor. Suspendisse eget nunc ut nisi tincidunt convallis quis sit amet ex. Cras viverra arcu sit amet suscipit blandit. Nunc euismod ullamcorper orci, eu feugiat dui. Sed ornare mollis elit. Phasellus nunc elit, iaculis eu quam nec, mattis maximus eros. Donec tincidunt porttitor ante, in placerat turpis condimentum at. Sed augue diam, lacinia nec suscipit vel, porttitor vitae dolor.
-                </div>
-                <div class="video">
-                  <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div>
+                <div class="description" id="desc"></div>
+                <div class="video" id="video"></div>
+                <div class="slideshow" id="slideshow"></div>
                 <hr>
-                <div class="contact-list">
-                    <div class="contact">
-                        <img class="contact-icon" src="../../img/insta-icon.svg">
-                        <a href="https://www.instagram.com/wlmachosa/" target="_blank">
-                            <p class="contact-text">HOSA Instagram</p>
-                        </a>
-                    </div>
-                </div>
+                <div class="contact-list" id="contact-list"></div>
                 <hr>
             </div>
         </div>
-        <script src="../../js/clubs.js"></script>
+        <script src="../../js/club-page.js"></script>
         <div class="footer">
             <div class="footer-title-par"><p class="footer-title">This website was made from scratch by <span style="font-weight: 700">Justin Lu, Nicole Cui, Eric Shim, and Diana Lin</span> as a mock for an improved student website :D</p></div>
             <hr class="footer-bar">
