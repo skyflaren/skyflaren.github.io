@@ -63,6 +63,11 @@ iframe {
 	display: flex;
 	align-items: center;
 	margin-top: 30px;
+	opacity: 1;
+}
+
+.contact:hover{
+  filter: brightness(85%);
 }
 
 .contact-icon{
@@ -99,7 +104,7 @@ iframe {
         width: 90%;
     }
     .slideshow iframe{
-        width: 90vw; 
+        width: 90vw;
         height: calc(90vw*0.6);
     }
     hr {
