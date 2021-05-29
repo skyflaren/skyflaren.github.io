@@ -4,6 +4,7 @@ document.addEventListener("DOMContentLoaded", function() {
         height: "auto",
         initialView: "dayGridMonth",
         fixedWeekCount: false,
+        handleWindowResize: true,
         headerToolbar: {
             start: "title",
             center: "",
