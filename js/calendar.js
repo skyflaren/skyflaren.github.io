@@ -15,36 +15,32 @@ document.addEventListener("DOMContentLoaded", function() {
                 title: "Arts in Bloom",
                 start: "2021-05-25",
                 end: "2021-05-29",
+                description: "Lorem ipsum dolor",
                 color: "var(--status3)"
-            },
-            {
-                title: "Greenpeace Biodiversity",
-                start: "2021-05-25",
-                end: "2021-05-25",
-                color: "var(--status0)"
             },
             {
                 title: "SAC Elections",
                 start: "2021-06-02",
                 end: "2021-06-04",
+                description: "Lorem ipsum dolor",
                 color: "var(--status1)"
             },
             {
                 title: "MAC Application closes",
                 start: "2021-05-31",
-                end: "2021-05-31",
+                description: "Lorem ipsum dolor",
                 color: "var(--status1)"
             },
             {
                 title: "Arts Council Application closes",
                 start: "2021-05-31",
-                end: "2021-05-31",
+                description: "Lorem ipsum dolor",
                 color: "var(--status3)"
             },
             {
                 title: "TED Club Annual Conference",
                 start: "2021-05-21",
-                end: "2021-05-21",
+                description: "Lorem ipsum dolor",
                 color: "var(--status3)"
             }
         ]
