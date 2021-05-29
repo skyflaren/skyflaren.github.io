@@ -9,17 +9,22 @@
     margin: auto;
 }
 #calendar {
-    /*width: 90%;*/
     height: 100%;
 }
-.fc-scroller {
-    /*overflow-y: hidden !important;*/
- }
- .fc-toolbar-chunk {
- }
-
- @media screen and (max-width: 800px) {
+@media screen and (max-width: 800px) {
+    .container {
+        text-align: center;
+    }
     #wrapper{
         padding: 40px 0px;
+    }
+    .fc .fc-toolbar-title {
+        font-size: 20px;
+    }
+    .fc-direction-ltr .fc-toolbar> * >:not(:first-child) {
+        margin-left: 5px;
+    }
+    .fc .fc-button {
+        font-size: 10px;
     }
  }
