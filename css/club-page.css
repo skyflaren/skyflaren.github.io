@@ -50,6 +50,10 @@ iframe {
 .slideshow iframe{
     width: 60vw;
     height: calc(60vw*0.6);
+    border-style: none;
+    allowfullscreen: "true";
+    mozallowfullscreen: "true";
+    webkitallowfullscreen: "true";
 }
 .contact-list{
 	display: flex;
