@@ -96,7 +96,8 @@ h3{
 }
 
 b{
-    font: 900;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
 }
 
 /*img{
