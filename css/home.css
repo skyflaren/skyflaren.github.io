@@ -52,7 +52,7 @@
 	flex-direction: column;
 	-webkit-flex-direction: column;
 
-	padding: 20px;
+	padding: 50px 20px;
 	max-width: 70%;
 	margin: auto;
 }
@@ -60,7 +60,7 @@
 .two-block-par h2 {
 	font-family: 'Raleway', sans-serif;
 	font-weight: 700;
-	padding:  20px;
+	padding: 20px;
 	text-align: center;
 	
 	height: 100%;

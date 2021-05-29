@@ -15,7 +15,7 @@ nav.addEventListener("mouseleave",function () {
  });
 
 
-var inintv=false, outintv=false, betinv=false;
+var inintv=false, outintv=false;
 for (let item of document.getElementsByClassName("item-navbar")) {
     item.addEventListener("mouseenter", function(evt){
       let mouseX = evt.clientX;
@@ -23,8 +23,6 @@ for (let item of document.getElementsByClassName("item-navbar")) {
       slider.style.width = sw+"px";
                           
       clearInterval(inintv);
-      // clearInterval(betinv);
-      // betinv = false;
       inintv = setInterval(function(){
            mouseX = evt.clientX;
            slider.style.width = getSliderWd()*1.4 + "px";
@@ -62,8 +60,6 @@ for (let item of document.getElementsByClassName("item-navbar")) {
       slider.style.width = Math.round(coord.right-coord.left) + "px";
       
       clearInterval(outintv);
-      // clearInterval(betinv);
-      // betinv = false;
       outintv = setInterval(function(){
             mouseX = evt.clientX;
             slider.style.width = getSliderWd()/1.4 + "px";
@@ -101,7 +97,7 @@ var btintv;
 nav.addEventListener("mousemove", function(evt) {
                      
      let inbtwn = true;
-     let mouseX = evt.clientX; 
+     let mouseX = evt.clientX;
      let min = 0;
      //     console.log(propFlt(slider.style.left) + " " + mouseX);
      
@@ -112,32 +108,23 @@ nav.addEventListener("mousemove", function(evt) {
 		inbtwn &= (mouseX+1 < coord.left || mouseX-1 > coord.right);
      }
 
-     if (inbtwn && !outintv && !inintv && !betinv) {
+     if (inbtwn && !outintv && !inintv) {
          inintv = false; outintv = false;
          clearInterval(inintv);
          clearInterval(outintv);
          slider.style.right = 'auto';
          
-         // betinv = setInterval(function(){
-         //    mouseX = evt.clientX;
-            console.log(mouseX);
-            if(mouseX >= min){
-                 if(propFlt(slider.style.left) < mouseX-(sw/2) - 0.5){
-                     slider.style.left = propFlt(slider.style.left)+1 + "px";
-                 }
-                 else if(propFlt(slider.style.left) > mouseX-(sw/2) +0.5){
-                     slider.style.left = propFlt(slider.style.left)-1 + "px";
-                 }
-                 else slider.style.left = mouseX-(sw/2) + "px";
+         if(mouseX >= min){
+             if(propFlt(slider.style.left) < mouseX-(sw/2)){
+                 slider.style.left = propFlt(slider.style.left)+(propFlt(slider.style.left)-mouseX-(sw/2))/2 + "px";
+             }
+             else if(propFlt(slider.style.left) > mouseX-(sw/2)){
+                 slider.style.left = propFlt(slider.style.left)+(mouseX-(sw/2)-propFlt(slider.style.left))/2 + "px";
              }
              else slider.style.left = mouseX-(sw/2) + "px";
-             slider.style.width = sw+"pqx";
-
-             if(slider.style.left = mouseX-(sw/2)){
-                // clearInterval(betinv);
-                // betinv = false;
-            }
-         // }, 20);
+         }
+         else slider.style.left = mouseX-(sw/2) + "px";
+         slider.style.width = sw+"pqx";
      }
 });
 
