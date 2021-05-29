@@ -125,7 +125,7 @@ h1 {
         padding-top: 50px;
     }
     .wrapper > .img {
-        width: 80%;
+        width: 60%;
         text-align: center;
         padding: 0px;
         padding-bottom: 20px;
@@ -137,8 +137,8 @@ h1 {
         padding: 10px;
     }
     .square {
-        width: 80%;
-        padding-bottom: 80%;
+        width: 60%;
+        padding-bottom: 60%;
     }
     #thumbnail {
         padding: 0px;
