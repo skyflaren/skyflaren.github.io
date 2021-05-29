@@ -1,3 +1,6 @@
+.body{
+    position: fixed;
+}
 .container {
     padding: 0px;
 }
@@ -57,7 +60,7 @@
 }
 #blogcontent {
     width: calc(100% - 100px);
-    padding: 10px 0px 30px;
+    padding: 10px 15px 30px 0px;
 }
 .wrapper {
     padding: 20px 0px;
@@ -159,4 +162,9 @@ h1 {
     .wrapper > .noimg {
         padding: 0px;
     }
+    .body{
+        position: relative;
+    }
+}
+
 }
