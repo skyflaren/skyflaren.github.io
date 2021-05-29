@@ -43,7 +43,21 @@ document.addEventListener("DOMContentLoaded", function() {
                 description: "Lorem ipsum dolor",
                 color: "var(--status3)"
             }
-        ]
+        ],
+        /*
+        eventMouseEnter: function(info) {
+            console.log(info.event.extendedProps.description);
+            info.el.innerText = info.event.title + " | " + info.event.extendedProps.description;
+            info.el.style.color = "white";
+            info.el.style.position = "relative";
+            info.el.style.zIndex = "1";
+        },
+        eventMouseLeave: function(info) {
+            info.el.style.color = "white";
+            info.el.innerText = info.event.title;
+            info.el.style.position = "relative";
+            info.el.style.zIndex = "1";
+        }*/
     });
     calendar.render();
 });
