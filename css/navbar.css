@@ -134,6 +134,18 @@
     padding: 5px 0px;
     opacity: 0.68;
 }
+.hamburger-bold{
+    position: relative;
+    width: 100%;
+    text-align: center;
+    font-weight: 700;
+    color: var(--navbartext);
+    
+    text-decoration: none;
+    padding: 5px 0px;
+    opacity: 0.68;
+}
+
 
 .hamburger-item:hover {
     opacity: 1;
