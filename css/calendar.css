@@ -1,12 +1,25 @@
+.container{
+    margin-top:  70px;
+}
 #wrapper {
     width: 100%;
     display: flex;
     justify-content: center;
-    padding-top: 40px;
+    padding: 40px;
+    margin: auto;
 }
 #calendar {
-    width: 90%;
+    /*width: 90%;*/
+    height: 100%;
 }
 .fc-scroller {
-    overflow-y: hidden !important;
+    /*overflow-y: hidden !important;*/
+ }
+ .fc-toolbar-chunk {
+ }
+
+ @media screen and (max-width: 800px) {
+    #wrapper{
+        padding: 40px 0px;
+    }
  }

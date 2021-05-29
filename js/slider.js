@@ -15,7 +15,7 @@ nav.addEventListener("mouseleave",function () {
  });
 
 
-var inintv=false, outintv=false;
+var inintv=false, outintv=false, betinv=false;
 for (let item of document.getElementsByClassName("item-navbar")) {
     item.addEventListener("mouseenter", function(evt){
       let mouseX = evt.clientX;
@@ -101,7 +101,7 @@ var btintv;
 nav.addEventListener("mousemove", function(evt) {
                      
      let inbtwn = true;
-     let mouseX = evt.clientX;
+     let mouseX = evt.clientX; 
      let min = 0;
      //     console.log(propFlt(slider.style.left) + " " + mouseX);
      
@@ -118,7 +118,9 @@ nav.addEventListener("mousemove", function(evt) {
          clearInterval(outintv);
          slider.style.right = 'auto';
          
-         betinv = setInterval(function(){
+         // betinv = setInterval(function(){
+         //    mouseX = evt.clientX;
+            console.log(mouseX);
             if(mouseX >= min){
                  if(propFlt(slider.style.left) < mouseX-(sw/2) - 0.5){
                      slider.style.left = propFlt(slider.style.left)+1 + "px";
@@ -131,11 +133,11 @@ nav.addEventListener("mousemove", function(evt) {
              else slider.style.left = mouseX-(sw/2) + "px";
              slider.style.width = sw+"pqx";
 
-             if(slide.style.left = mouseX-(sw/2)){
+             if(slider.style.left = mouseX-(sw/2)){
                 // clearInterval(betinv);
                 // betinv = false;
             }
-         }, 1);
+         // }, 20);
      }
 });
 
