@@ -57,10 +57,13 @@ code{
     color: white;
 }
 
+html{
+    overflow-x: hidden;
+}
+
 body{
     margin: 0px;
     height: 100%;
-    overflow-x: hidden;
     min-width: 100vw;
 }
 
