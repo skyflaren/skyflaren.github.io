@@ -45,10 +45,18 @@
 	width: 3vh;
 }
 
+.contact{
+	opacity: 1;
+}
+
+.contact:hover{
+	filter: brightness(85%);
+}
+
 .contact-text{
 	padding-left: 10px;
 	font-size: 18px;
-	opacity: 0.8;
+	color: var(--gold1);
 }
 
 @media screen and (max-width: 800px) {

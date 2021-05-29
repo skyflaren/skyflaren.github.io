@@ -23,6 +23,8 @@ for (let item of document.getElementsByClassName("item-navbar")) {
       slider.style.width = sw+"px";
                           
       clearInterval(inintv);
+      // clearInterval(betinv);
+      // betinv = false;
       inintv = setInterval(function(){
            mouseX = evt.clientX;
            slider.style.width = getSliderWd()*1.4 + "px";
@@ -60,6 +62,8 @@ for (let item of document.getElementsByClassName("item-navbar")) {
       slider.style.width = Math.round(coord.right-coord.left) + "px";
       
       clearInterval(outintv);
+      // clearInterval(betinv);
+      // betinv = false;
       outintv = setInterval(function(){
             mouseX = evt.clientX;
             slider.style.width = getSliderWd()/1.4 + "px";
@@ -108,23 +112,30 @@ nav.addEventListener("mousemove", function(evt) {
 		inbtwn &= (mouseX+1 < coord.left || mouseX-1 > coord.right);
      }
 
-     if (inbtwn && !outintv && !inintv) {
+     if (inbtwn && !outintv && !inintv && !betinv) {
          inintv = false; outintv = false;
          clearInterval(inintv);
          clearInterval(outintv);
          slider.style.right = 'auto';
          
-         if(mouseX >= min){
-             if(propFlt(slider.style.left) < mouseX-(sw/2)){
-                 slider.style.left = propFlt(slider.style.left)+1 + "px";
-             }
-             else if(propFlt(slider.style.left) > mouseX-(sw/2)){
-                 slider.style.left = propFlt(slider.style.left)-1 + "px";
+         betinv = setInterval(function(){
+            if(mouseX >= min){
+                 if(propFlt(slider.style.left) < mouseX-(sw/2) - 0.5){
+                     slider.style.left = propFlt(slider.style.left)+1 + "px";
+                 }
+                 else if(propFlt(slider.style.left) > mouseX-(sw/2) +0.5){
+                     slider.style.left = propFlt(slider.style.left)-1 + "px";
+                 }
+                 else slider.style.left = mouseX-(sw/2) + "px";
              }
              else slider.style.left = mouseX-(sw/2) + "px";
-         }
-         else slider.style.left = mouseX-(sw/2) + "px";
-         slider.style.width = sw+"pqx";
+             slider.style.width = sw+"pqx";
+
+             if(slide.style.left = mouseX-(sw/2)){
+                // clearInterval(betinv);
+                // betinv = false;
+            }
+         }, 1);
      }
 });
 

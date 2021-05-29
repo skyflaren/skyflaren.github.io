@@ -205,3 +205,15 @@ b{
     color: var(--red0);
     /*opacity: 0.8;*/
 }
+
+.dark-grey{
+    background-color: var(--grey1);
+}
+
+.gold{
+    background-color: var(--gold1);
+}
+
+.right-text{
+    text-align: right;
+}
