@@ -48,6 +48,9 @@
     font-weight: 700;
     cursor: default;
 }
+#current {
+    cursor: pointer;
+}
 
 #home-wrap .home-logo{
     left: 0px !important;
