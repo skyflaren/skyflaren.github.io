@@ -79,7 +79,7 @@ hr {
 }
 
 h1 {
-    font-size: calc(1vw + 30px);
+    font-size: calc(0.75vw + 30px);
     font-weight: 800;
     color: var(--grey1);
     margin: 0px;
