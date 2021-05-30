@@ -37,6 +37,9 @@ hr {
     line-height: 175%;
     padding-top: 20px;
 }
+.wrapper {
+    margin-bottom: 40px;
+}
 iframe {
     display: block;
     margin-left: auto;
