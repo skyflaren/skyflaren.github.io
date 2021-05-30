@@ -1,97 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
-        <link href="../css/navbar.css" rel="stylesheet" type="text/css" />
-        <link href="../css/base.css" rel="stylesheet" type="text/css" />
-        <link href="../css/clubs.css" rel="stylesheet" type="text/css" />
-        <link href="../css/multiselect.css" rel="stylesheet" type="text/css" />
-        <title>cuilu | Clubs</title>
-    </head>
-    <body onload="getClubs('')" onresize="resized()">
-        <div id="bar">
-            <div id="navbar-bkg">
-                <div id="navbar">
-                    <a href="../index.html"><div class="item-navbar" id="home-wrap">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <link href="../css/navbar.css" rel="stylesheet" type="text/css" />
+    <link href="../css/base.css" rel="stylesheet" type="text/css" />
+    <link href="../css/clubs.css" rel="stylesheet" type="text/css" />
+    <link href="../css/multiselect.css" rel="stylesheet" type="text/css" />
+    <title>cuilu | Clubs</title>
+</head>
+
+<body onload="getClubs('')" onresize="resized()">
+    <div id="bar">
+        <div id="navbar-bkg">
+            <div id="navbar">
+                <a href="../index.html">
+                    <div class="item-navbar" id="home-wrap">
                         <span class="home-name any-item">CUILU</span>
-                        <img class="home-logo any-item" draggable="false" src="../img/logo-dark.png"/>
-                    </div></a>
-                    <img src="../img/hamburger-icon.svg" class="hamburger-icon any-item" onclick="collapse()">
-                    <div id="col">
-                        <a class="any-item item-navbar" href="../blog/index.html">BLOG</a>
-                        <a class="any-item bold-navbar">CLUBS</a>
-                        <a class="any-item item-navbar" href="../calendar/index.html">CALENDAR</a>
-                        <a class="any-item item-navbar" href="../testimonials/index.html">TESTIMONIALS</a>
-                        <a class="any-item item-navbar" href="../about/index.html">ABOUT</a>
+                        <img class="home-logo any-item" draggable="false" src="../img/logo-dark.png" />
                     </div>
+                </a>
+                <img src="../img/hamburger-icon.svg" class="hamburger-icon any-item" onclick="collapse()">
+                <div id="col">
+                    <a class="any-item item-navbar" href="../blog/index.html">BLOG</a>
+                    <a class="any-item bold-navbar">CLUBS</a>
+                    <a class="any-item item-navbar" href="../calendar/index.html">CALENDAR</a>
+                    <a class="any-item item-navbar" href="../testimonials/index.html">TESTIMONIALS</a>
+                    <a class="any-item item-navbar" href="../about/index.html">ABOUT</a>
                 </div>
             </div>
-            <div id="slider"></div>
-            <div id="hamburger-par">
-                <a class="hamburger-item" href="../blog/index.html">BLOG</a>
-                <a class="hamburger-bold">CLUBS</a>
-                <a class="hamburger-item" href="../calendar/index.html">CALENDAR</a>
-                <a class="hamburger-item" href="../testimonials/index.html">TESTIMONIALS</a>
-                <a class="hamburger-item" href="../about/index.html">ABOUT</a>
-            </div>
-            <script src="../js/slider.js"></script>
-            <script src="../js/hamburger.js"></script>
         </div>
-        <div id="bg">
-            <div class="container">
-                <div id="header">
-                    <h1 style="padding-top: 40px">Clubs</h1>
-                    <div id="wrapper">
-                        <ul class="legend">
-                            <li><span id="open"></span>Open Membership</li>
-                            <li><span id="accepting"></span>Accepting Applications</li>
-                            <li><span id="pending"></span>Pending Applications</li>
-                            <li><span id="closed"></span>Closed Applications</li>
-                        </ul>
-                        <form>
-                            <script src="../js/multiselect.js"></script>
-                            <div class="multiselect" id="multiselect">
-                                <div class="selectBox" onclick="showCheckBoxes()">
-                                    <select>
-                                        <option>Filter Clubs</option>
-                                    </select>
-                                    <div class="overSelect"></div>
-                                </div>
-                                <div id="checkBoxes" style="display: none;">
-                                    <label for="0" onclick="update()"><input type="checkbox" id="0" name="open" value="S0"/>Open Membership</label>
-                                    <label for="1" onclick="update()"><input type="checkbox" id="1" name="accepting" value="S1"/>Accepting Applications</label>
-                                    <label for="2" onclick="update()"><input type="checkbox" id="2" name="pending" value="S2"/>Pending Applications</label>
-                                    <label for="3" onclick="update()"><input type="checkbox" id="3" name="closed" value="S3"/>Closed Applications</label>
-                                    <label for="4" onclick="update()"><input type="checkbox" id="4" name="science" value="T0"/>Math & Sciences</label>
-                                    <label for="5" onclick="update()"><input type="checkbox" id="5" name="tech" value="T1"/>Technology</label>
-                                    <label for="6" onclick="update()"><input type="checkbox" id="6" name="arts" value="T2"/>Arts</label>
-                                    <label for="7" onclick="update()"><input type="checkbox" id="7" name="gym" value="T3"/>Athletics</label>
-                                    <label for="8" onclick="update()"><input type="checkbox" id="8" name="social" value="T4"/>Humanities</label>
-                                    <label for="9" onclick="update()"><input type="checkbox" id="9" name="language" value="T5"/>Languages</label>
-                                    <label for="10" onclick="update()"><input type="checkbox" id="10" name="business" value="T6"/>Business</label>
-                                    <label for="11" onclick="update()"><input type="checkbox" id="11" name="culture" value="T7"/>Cultural</label>
-                                    <label for="12" onclick="update()"><input type="checkbox" id="12" name="council" value="T8"/>Councils</label>
-                                </div>
+        <div id="slider"></div>
+        <div id="hamburger-par">
+            <a class="hamburger-item" href="../blog/index.html">BLOG</a>
+            <a class="hamburger-bold">CLUBS</a>
+            <a class="hamburger-item" href="../calendar/index.html">CALENDAR</a>
+            <a class="hamburger-item" href="../testimonials/index.html">TESTIMONIALS</a>
+            <a class="hamburger-item" href="../about/index.html">ABOUT</a>
+        </div>
+        <script src="../js/slider.js"></script>
+        <script src="../js/hamburger.js"></script>
+    </div>
+    <div id="bg">
+        <div class="container">
+            <div id="header">
+                <h1 style="padding-top: 40px">Clubs</h1>
+                <div id="wrapper">
+                    <ul class="legend">
+                        <li><span id="open"></span>Open Membership</li>
+                        <li><span id="accepting"></span>Accepting Applications</li>
+                        <li><span id="pending"></span>Pending Applications</li>
+                        <li><span id="closed"></span>Closed Applications</li>
+                    </ul>
+                    <form>
+                        <script src="../js/multiselect.js"></script>
+                        <div class="multiselect" id="multiselect">
+                            <div class="selectBox" onclick="showCheckBoxes()">
+                                <select>
+                                    <option>Filter Clubs</option>
+                                </select>
+                                <div class="overSelect"></div>
                             </div>
-                        </form>
-                    </div>
-                    <br>
-                    <hr>
+                            <div id="checkBoxes" style="display: none;">
+                                <label for="0" onclick="update()"><input type="checkbox" id="0" name="open"
+                                        value="S0" />Open Membership</label>
+                                <label for="1" onclick="update()"><input type="checkbox" id="1" name="accepting"
+                                        value="S1" />Accepting Applications</label>
+                                <label for="2" onclick="update()"><input type="checkbox" id="2" name="pending"
+                                        value="S2" />Pending Applications</label>
+                                <label for="3" onclick="update()"><input type="checkbox" id="3" name="closed"
+                                        value="S3" />Closed Applications</label>
+                                <label for="4" onclick="update()"><input type="checkbox" id="4" name="science"
+                                        value="T0" />Math & Sciences</label>
+                                <label for="5" onclick="update()"><input type="checkbox" id="5" name="tech"
+                                        value="T1" />Technology</label>
+                                <label for="6" onclick="update()"><input type="checkbox" id="6" name="arts"
+                                        value="T2" />Arts</label>
+                                <label for="7" onclick="update()"><input type="checkbox" id="7" name="gym"
+                                        value="T3" />Athletics</label>
+                                <label for="8" onclick="update()"><input type="checkbox" id="8" name="social"
+                                        value="T4" />Humanities</label>
+                                <label for="9" onclick="update()"><input type="checkbox" id="9" name="language"
+                                        value="T5" />Languages</label>
+                                <label for="10" onclick="update()"><input type="checkbox" id="10" name="business"
+                                        value="T6" />Business</label>
+                                <label for="11" onclick="update()"><input type="checkbox" id="11" name="culture"
+                                        value="T7" />Cultural</label>
+                                <label for="12" onclick="update()"><input type="checkbox" id="12" name="council"
+                                        value="T8" />Councils</label>
+                            </div>
+                        </div>
+                    </form>
                 </div>
-                <div id="clubs"></div>
+                <br>
+                <hr>
             </div>
+            <div id="clubs"></div>
         </div>
-        <script src="../js/clubs.js"></script>
-        <div class="footer">
-            <div class="footer-title-par"><p class="footer-title">This website was made from scratch by <span style="font-weight: 700">Justin Lu, Nicole Cui, Eric Shim, and Diana Lin</span> as a mock for an improved student website :D</p></div>
-            <hr class="footer-bar">
-            <div class="foooter-icon-par">
-                <a class="footer-name" href="https://www.instagram.com/cuilu.vp/" rel="noreferrer" target="_blank"><img class="footer-icon" src="../img/insta-icon.svg"></a>
-                <a class="footer-name" href="https://discord.gg/DT6vdmPJw4" rel="noreferrer" target="_blank"><img class="footer-icon" src="../img/discord-icon.svg"></a>
-                <a class="footer-name" href="mailto:cuilu@justinlu.ca" rel="noreferrer" target="_blank"><img class="footer-icon" src="../img/email-icon.svg"></a>
-            </div>
+    </div>
+    <script src="../js/clubs.js"></script>
+    <div class="footer">
+        <div class="footer-title-par">
+            <p class="footer-title">This website was made from scratch by <span style="font-weight: 700">Justin Lu,
+                    Nicole Cui, Eric Shim, and Diana Lin</span> as a mock for an improved student website :D</p>
         </div>
-    </body>
+        <hr class="footer-bar">
+        <div class="foooter-icon-par">
+            <a class="footer-name" href="https://www.instagram.com/cuilu.vp/" rel="noreferrer" target="_blank"><img
+                    class="footer-icon" src="../img/insta-icon.svg"></a>
+            <a class="footer-name" href="https://discord.gg/DT6vdmPJw4" rel="noreferrer" target="_blank"><img
+                    class="footer-icon" src="../img/discord-icon.svg"></a>
+            <a class="footer-name" href="mailto:cuilu@justinlu.ca" rel="noreferrer" target="_blank"><img
+                    class="footer-icon" src="../img/email-icon.svg"></a>
+        </div>
+    </div>
+</body>
+
 </html>

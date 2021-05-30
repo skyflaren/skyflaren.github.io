@@ -1,72 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
-        <link href="../css/navbar.css" rel="stylesheet" type="text/css" />
-        <link href="../css/base.css" rel="stylesheet" type="text/css" />
-        <link href="../css/blog.css" rel="stylesheet" type="text/css" />
-        <title>cuilu | Blog</title>
-    </head>
-    <body onload="setPost('0000')" onresize="resized()">
-        <div id="bar">
-            <div id="navbar-bkg">
-                <div id="navbar">
-                    <a href="../index.html"><div class="item-navbar" id="home-wrap">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <link href="../css/navbar.css" rel="stylesheet" type="text/css" />
+    <link href="../css/base.css" rel="stylesheet" type="text/css" />
+    <link href="../css/blog.css" rel="stylesheet" type="text/css" />
+    <title>cuilu | Blog</title>
+</head>
+
+<body onload="setPost('0000')" onresize="resized()">
+    <div id="bar">
+        <div id="navbar-bkg">
+            <div id="navbar">
+                <a href="../index.html">
+                    <div class="item-navbar" id="home-wrap">
                         <span class="home-name any-item">CUILU</span>
-                        <img class="home-logo any-item" draggable="false" src="../img/logo-dark.png"/>
-                    </div></a>
-                    <img src="../img/hamburger-icon.svg" class="hamburger-icon any-item" onclick="collapse()">
-                    <div id="col">
-                        <a class="any-item bold-navbar">BLOG</a>
-                        <a class="any-item item-navbar" href="../clubs/index.html">CLUBS</a>
-                        <a class="any-item item-navbar" href="../calendar/index.html">CALENDAR</a>
-                        <a class="any-item item-navbar" href="../testimonials/index.html">TESTIMONIALS</a>
-                        <a class="any-item item-navbar" href="../about/index.html">ABOUT</a>
+                        <img class="home-logo any-item" draggable="false" src="../img/logo-dark.png" />
                     </div>
+                </a>
+                <img src="../img/hamburger-icon.svg" class="hamburger-icon any-item" onclick="collapse()">
+                <div id="col">
+                    <a class="any-item bold-navbar">BLOG</a>
+                    <a class="any-item item-navbar" href="../clubs/index.html">CLUBS</a>
+                    <a class="any-item item-navbar" href="../calendar/index.html">CALENDAR</a>
+                    <a class="any-item item-navbar" href="../testimonials/index.html">TESTIMONIALS</a>
+                    <a class="any-item item-navbar" href="../about/index.html">ABOUT</a>
                 </div>
             </div>
-            <div id="slider"></div>
-            <div id="hamburger-par">
-                <a class="hamburger-bold">BLOG</a>
-                <a class="hamburger-item" href="../clubs/index.html">CLUBS</a>
-                <a class="hamburger-item" href="../calendar/index.html">CALENDAR</a>
-                <a class="hamburger-item" href="../testimonials/index.html">TESTIMONIALS</a>
-                <a class="hamburger-item" href="../about/index.html">ABOUT</a>
-            </div>
-            <script src="../js/slider.js"></script>
-            <script src="../js/hamburger.js"></script>
         </div>
-        <div id="bg">
-            <div class="container">
-                <div id="blog">
-                    <div id="blognav"></div>
-                    <div id="blogcontent">
-                        <div class="wrapper" id="header">
-                            <div class="square" id="square">
-                                <img id="thumbnail">
-                            </div>
-                            <div id="bloghead">
-                                <h1 id="title"></h1>
-                                <p id="subtitle" style="margin-bottom: 20px;"></p>
-                                <hr>
-                            </div>
+        <div id="slider"></div>
+        <div id="hamburger-par">
+            <a class="hamburger-bold">BLOG</a>
+            <a class="hamburger-item" href="../clubs/index.html">CLUBS</a>
+            <a class="hamburger-item" href="../calendar/index.html">CALENDAR</a>
+            <a class="hamburger-item" href="../testimonials/index.html">TESTIMONIALS</a>
+            <a class="hamburger-item" href="../about/index.html">ABOUT</a>
+        </div>
+        <script src="../js/slider.js"></script>
+        <script src="../js/hamburger.js"></script>
+    </div>
+    <div id="bg">
+        <div class="container">
+            <div id="blog">
+                <div id="blognav"></div>
+                <div id="blogcontent">
+                    <div class="wrapper" id="header">
+                        <div class="square" id="square">
+                            <img id="thumbnail">
                         </div>
-                        <div id="blogbody"></div>
+                        <div id="bloghead">
+                            <h1 id="title"></h1>
+                            <p id="subtitle" style="margin-bottom: 20px;"></p>
+                            <hr>
+                        </div>
                     </div>
+                    <div id="blogbody"></div>
                 </div>
             </div>
         </div>
-        <script src="../js/blog.js"></script>
-        <div class="footer">
-            <div class="footer-title-par"><p class="footer-title">This website was made from scratch by <span style="font-weight: 700">Justin Lu, Nicole Cui, Eric Shim, and Diana Lin</span> as a mock for an improved student website :D</p></div>
-            <hr class="footer-bar">
-            <div class="foooter-icon-par">
-                <a class="footer-name" href="https://www.instagram.com/cuilu.vp/" rel="noreferrer" target="_blank"><img class="footer-icon" src="../img/insta-icon.svg"></a>
-                <a class="footer-name" href="https://discord.gg/DT6vdmPJw4" rel="noreferrer" target="_blank"><img class="footer-icon" src="../img/discord-icon.svg"></a>
-                <a class="footer-name" href="mailto:cuilu@justinlu.ca" rel="noreferrer" target="_blank"><img class="footer-icon" src="../img/email-icon.svg"></a>
-            </div>
+    </div>
+    <script src="../js/blog.js"></script>
+    <div class="footer">
+        <div class="footer-title-par">
+            <p class="footer-title">This website was made from scratch by <span style="font-weight: 700">Justin Lu,
+                    Nicole Cui, Eric Shim, and Diana Lin</span> as a mock for an improved student website :D</p>
         </div>
-    </body>
+        <hr class="footer-bar">
+        <div class="foooter-icon-par">
+            <a class="footer-name" href="https://www.instagram.com/cuilu.vp/" rel="noreferrer" target="_blank"><img
+                    class="footer-icon" src="../img/insta-icon.svg"></a>
+            <a class="footer-name" href="https://discord.gg/DT6vdmPJw4" rel="noreferrer" target="_blank"><img
+                    class="footer-icon" src="../img/discord-icon.svg"></a>
+            <a class="footer-name" href="mailto:cuilu@justinlu.ca" rel="noreferrer" target="_blank"><img
+                    class="footer-icon" src="../img/email-icon.svg"></a>
+        </div>
+    </div>
+</body>
+
 </html>

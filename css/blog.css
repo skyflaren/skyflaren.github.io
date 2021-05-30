@@ -1,10 +1,12 @@
 .container {
     padding: 0px;
 }
+
 #blog {
     width: 100%;
     display: flex;
 }
+
 #blognav {
     width: 100px;
     background-color: var(--grey3);
@@ -13,11 +15,13 @@
     display: flex;
     flex-direction: column;
 }
+
 .button {
     position: relative;
     display: inline-block;
     margin: 0px 14px 14px 14px
 }
+
 .button .tooltip {
     visibility: hidden;
     width: auto;
@@ -35,6 +39,7 @@
     opacity: 0;
     transition: all 0.25s;
 }
+
 .button .tooltip::after {
     content: "";
     position: absolute;
@@ -45,37 +50,44 @@
     border-style: solid;
     border-color: transparent var(--grey2) transparent transparent;
 }
+
 .button:hover .tooltip {
     visibility: visible;
     opacity: 1;
 }
+
 #blognav img {
     width: 70px;
     height: 70px;
     object-fit: cover;
     display: block;
 }
+
 #blogcontent {
     width: calc(100% - 100px);
     padding: 10px 15px 30px 0px;
 }
+
 .wrapper {
     padding: 20px 0px;
     width: 100%;
     display: flex;
     align-items: center;
 }
+
 .wrapper::after {
     content: "";
     clear: both;
     display: table;
 }
+
 .square {
     width: 50%;
     padding-bottom: 50%;
     position: relative;
     display: flex;
 }
+
 #thumbnail {
     width: calc(100% - 40px);
     height: calc(100% - 40px);
@@ -87,31 +99,38 @@
     object-fit: cover;
     padding: 20px;
 }
+
 #bloghead {
     padding-left: 20px;
     width: calc(50% - 20px);
 }
+
 .blogbody {
     width: 100%;
 }
-.wrapper > .img {
+
+.wrapper>.img {
     width: calc(50% - 20px);
     padding: 0px 20px;
     display: flex;
     justify-content: center;
 }
-.wrapper > .img > img {
+
+.wrapper>.img>img {
     max-height: 100%;
     max-width: 100%;
 }
-.wrapper > .text {
+
+.wrapper>.text {
     height: 20%;
     width: 50%;
     padding-left: 20px;
 }
+
 h1 {
     margin: 10px 0px;
 }
+
 @media screen and (max-width: 800px) {
     #blogbody {
         padding-bottom: 50px;
@@ -124,13 +143,13 @@ h1 {
         padding: 0px;
         padding-top: 50px;
     }
-    .wrapper > .img {
+    .wrapper>.img {
         width: 60%;
         text-align: center;
         padding: 0px;
         padding-bottom: 20px;
     }
-    .wrapper > .text {
+    .wrapper>.text {
         width: calc(90% - 20px);
         text-align: center;
         margin: 0px;
@@ -156,7 +175,7 @@ h1 {
     .noimg {
         display: none;
     }
-    .wrapper > .noimg {
+    .wrapper>.noimg {
         padding: 0px;
     }
 }

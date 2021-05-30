@@ -4,14 +4,14 @@ async function getPosts() {
     let posts = await (await fetch("https://campagne-api.waba359.repl.co/blog/posts.json")).json();
     let navbar = document.getElementById("blognav");
     navbar.innerHTML = "";
-    for(let post of posts.posts) {
+    for (let post of posts.posts) {
         let button = document.createElement("div");
         let thumbnail = document.createElement("img");
         button.classList.add("button");
         thumbnail.id = post.id;
         thumbnail.style.border = "solid 2px rgba(0,0,0,0)";
         thumbnail.draggable = false;
-        thumbnail.addEventListener("click", function() {
+        thumbnail.addEventListener("click", function () {
             setPost(this.id);
             document.getElementById(recent).style.border = "solid 2px rgba(0,0,0,0)";
             recent = this.id;
@@ -22,22 +22,22 @@ async function getPosts() {
         tooltip.innerHTML = post.title;
         button.appendChild(thumbnail);
         button.appendChild(tooltip);
-        thumbnail.src = (post.thumbnail == "" ? "https://campagne-api.waba359.repl.co/temp/default.png" : "https://campagne-api.waba359.repl.co/blog/"+post.id+"/images/"+post.thumbnail);
+        thumbnail.src = (post.thumbnail == "" ? "https://campagne-api.waba359.repl.co/temp/default.png" : "https://campagne-api.waba359.repl.co/blog/" + post.id + "/images/" + post.thumbnail);
         thumbnail.alt = "Blog Icon";
         navbar.appendChild(button);
     }
     document.getElementById(recent).style.border = "solid 2px var(--gold1)";
 }
 async function setPost(id) {
-    let post = await (await fetch("https://campagne-api.waba359.repl.co/blog/"+id+"/"+id+".json")).json();
+    let post = await (await fetch("https://campagne-api.waba359.repl.co/blog/" + id + "/" + id + ".json")).json();
     let thumbnail = document.getElementById("thumbnail");
     let title = document.getElementById("title");
     let subtitle = document.getElementById("subtitle");
     let blogbody = document.getElementById("blogbody");
     blogbody.innerHTML = "";
-    if(post.thumbnail != "") {
-        thumbnail.src = "https://campagne-api.waba359.repl.co/blog/"+post.id+"/images/"+post.thumbnail;
-        thumbnail.alt = post.title+" Thumbnail";
+    if (post.thumbnail != "") {
+        thumbnail.src = "https://campagne-api.waba359.repl.co/blog/" + post.id + "/images/" + post.thumbnail;
+        thumbnail.alt = post.title + " Thumbnail";
         thumbnail.draggable = false;
     } else {
         thumbnail.style.display = "none";
@@ -46,7 +46,7 @@ async function setPost(id) {
     }
     title.innerHTML = post.title;
     subtitle.innerHTML = post.date + " | " + post.subtitle;
-    for(let para of post.body) {
+    for (let para of post.body) {
         let wrapper = document.createElement("div");
         let imgwrapper = document.createElement("div");
         let image = document.createElement("img");
@@ -55,9 +55,9 @@ async function setPost(id) {
         wrapper.classList.add("wrapper");
         imgwrapper.classList.add("img");
         textwrapper.classList.add("text");
-        if(para.image != "") {
-            image.src = "https://campagne-api.waba359.repl.co/blog/"+post.id+"/images/"+para.image;
-            image.alt = post.title+" Image";
+        if (para.image != "") {
+            image.src = "https://campagne-api.waba359.repl.co/blog/" + post.id + "/images/" + para.image;
+            image.alt = post.title + " Image";
             image.draggable = false;
         } else {
             image.style.display = "none";

@@ -2,21 +2,24 @@ h2 {
     font-weight: 400;
     margin-bottom: 10px;
 }
+
 p {
     color: var(--grey2);
 }
+
 #back-link {
     color: var(--gold1);
     text-decoration: none;
 }
 
-#back-link:hover{
+#back-link:hover {
     filter: brightness(85%);
 }
 
 hr {
     height: 2px;
 }
+
 .logo img {
     display: block;
     margin-left: auto;
@@ -26,38 +29,45 @@ hr {
     border-bottom-width: 10px;
     padding-bottom: 10px;
 }
+
 .logo {
     padding: 20px 0px;
     width: 100%;
 }
+
 .description {
-    display:flex;
+    display: flex;
     justify-content: center;
     text-align: center;
     line-height: 175%;
     padding-top: 20px;
 }
+
 .wrapper {
     margin-bottom: 40px;
 }
+
 iframe {
     display: block;
     margin-left: auto;
     margin-right: auto;
     border-style: none;
 }
+
 #videowrapper {
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
+
 .video {
     overflow: hidden;
     width: 50%;
     padding-bottom: 28.125%;
     position: relative;
 }
+
 .video iframe {
     position: absolute;
     left: 0;
@@ -65,60 +75,69 @@ iframe {
     height: 100%;
     width: 100%;
 }
+
 #slidewrapper {
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.slideshow{
+
+.slideshow {
     overflow: hidden;
     width: 90%;
     padding-bottom: 50.625%;
     position: relative;
 }
-.slideshow iframe{
+
+.slideshow iframe {
     position: absolute;
     left: 0;
     top: 0;
     height: 100%;
     width: 100%;
 }
-.contact-list{
-	display: flex;
-	flex-direction: column;
-	align-items: center;
+
+.contact-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     margin-bottom: 30px;
 }
+
 #contact-wrapper {
     display: flex;
     flex-direction: column;
     align-items: left;
 }
-.contact{
-	width: auto;
-	display: flex;
-	margin-top: 30px;
-	opacity: 1;
+
+.contact {
+    width: auto;
+    display: flex;
+    margin-top: 30px;
+    opacity: 1;
 }
+
 .contact a {
-	display: flex;
-	align-items: left;
-}
-.contact:hover{
-  filter: brightness(85%);
+    display: flex;
+    align-items: left;
 }
 
-.contact-icon{
-	height: 3vh;
-	width: 3vh;
+.contact:hover {
+    filter: brightness(85%);
 }
 
-.contact-text{
-	padding-left: 10px;
-	font-size: 18px;
-	opacity: 0.8;
+.contact-icon {
+    height: 3vh;
+    width: 3vh;
 }
+
+.contact-text {
+    padding-left: 10px;
+    font-size: 18px;
+    opacity: 0.8;
+}
+
 @media screen and (max-width: 800px) {
     .container {
         display: flex;
