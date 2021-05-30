@@ -17,7 +17,7 @@ async function setClub(id) {
     let video = document.createElement("iframe");
     let slideshow = document.createElement("iframe");
 
-    document.title = "cuilu | " + club.short;
+    document.title = "cuilu | " + (club.short == "" ? club.name : club.short);
     name.innerHTML = club.name.replace(/ *\([^)]*\) */g, " ");
     logo.src = "https://campagne-api.waba359.repl.co/clubs/logos/" + club.thumbnail;
     logo.alt = club.short + " Logo";
