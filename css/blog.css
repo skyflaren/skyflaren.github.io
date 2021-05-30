@@ -178,4 +178,7 @@ h1 {
     .wrapper>.noimg {
         padding: 0px;
     }
+    .button:hover .tooltip {
+        visibility: hidden;
+    }
 }
