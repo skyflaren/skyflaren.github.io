@@ -60,7 +60,6 @@ async function setPost(id) {
             image.alt = post.title+" Image";
             image.draggable = false;
         } else {
-            console.log(para.image);
             image.style.display = "none";
             imgwrapper.classList.add("noimg");
         }

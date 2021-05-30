@@ -84,7 +84,6 @@ for (let item of document.getElementsByClassName("item-navbar")) {
                 else {
                     slider.style.right = Math.round(document.body.scrollWidth - coord.right)+"px";
                     slider.style.left = "auto";
-                    // console.log(slider.style.right + " " + window.innerWidth + " " + coord.right + " " + slider.style.left);
                 }
                 clearInterval(outintv);
                 outintv = false;
@@ -99,11 +98,9 @@ nav.addEventListener("mousemove", function(evt) {
      let inbtwn = true;
      let mouseX = evt.clientX;
      let min = 0;
-     //     console.log(propFlt(slider.style.left) + " " + mouseX);
      
      for (let item of document.getElementsByClassName("item-navbar")) {
 		let coord = item.getBoundingClientRect();
-		// console.log(min + " " + coord.left);
         min = coord.left;
 		// min = (coord.left < min || min == 0 || Math.round(min) == 20 ? coord.left : min);
 		inbtwn &= (mouseX+1 < coord.left || mouseX-1 > coord.right);

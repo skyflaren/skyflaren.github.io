@@ -44,7 +44,6 @@ async function setClub(id) {
     }
     for(let key in club.links) {
         link = club.links[key];
-        console.log(link)
         if(key != "other") {
             let contact = document.createElement("div");
             let anchor = document.createElement("a");
