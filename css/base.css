@@ -6,25 +6,17 @@
     --grey1: #191818;
     /* dark grey */
     --grey2: #302d2d;
+    --grey25: #9c9c9c;
     /* darker light grey */
     --grey3: #dad8d8;
     /* light grey */
     --grey4: #f1f1f1;
-    --red0: #6b291a;
-    /* dark red */
-    --red1: #854435;
-    /* mid red */
-    --red2: #cd5a42;
-    /* light red */
-    --red3: #e1997c;
-    /*alternate mid red*/
-    --red25: #db735e;
-    /*paler than --red25*/
-    --salmon: #e8937b;
+
     /*gold*/
     --gold1: #cb9848;
     /*light gold*/
     --gold2: #cbb682;
+    
     --navbartext: var(--gold1);
     --status0: #5cc478;
     --status1: #567fe8;
