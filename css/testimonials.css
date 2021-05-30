@@ -44,6 +44,10 @@ p {
     flex-direction: column;
 }
 
+h3 + p, a + p{
+    color: var(--grey25);
+}
+
 @media screen and (max-width: 800px) {
     #container {
         padding: 10px;
