@@ -32,9 +32,15 @@ async function setClub(id) {
 
     if(club.video != "") {
         videowrapper.appendChild(video);
+    } else {
+        let wrapper = document.getElementById("videowrapper");
+        wrapper.style.display = "none";
     }
     if(club.slideshow != "") {
         slidewrapper.appendChild(slideshow);
+    } else {
+        let wrapper = document.getElementById("slidewrapper");
+        wrapper.style.display = "none";
     }
     for(let key in club.links) {
         link = club.links[key];
