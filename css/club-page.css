@@ -41,19 +41,45 @@ iframe {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    padding: 20px;
     border-style: none;
 }
+#videowrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.video {
+    overflow: hidden;
+    width: 50%;
+    padding-bottom: 28.125%;
+    position: relative;
+}
 .video iframe {
-    width: 560px;
-    height: 315px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+}
+#slidewrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .slideshow{
-    padding-bottom: 20px;
+    overflow: hidden;
+    width: 90%;
+    padding-bottom: 50.625%;
+    position: relative;
 }
 .slideshow iframe{
-    width: 60vw;
-    height: calc(60vw*0.6);
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
 }
 .contact-list{
 	display: flex;
@@ -110,12 +136,13 @@ iframe {
     .description {
         width: 80%;
     }
-    iframe {
-        width: 90%;
+    .video {
+        width: 80%;
+        padding-bottom: 45%
     }
-    .slideshow iframe{
-        width: 90vw;
-        height: calc(90vw*0.6);
+    .slideshow {
+        width: 90%;
+        padding-bottom: 50.625%
     }
     hr {
         width: 100%
