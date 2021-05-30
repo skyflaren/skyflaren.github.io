@@ -7,8 +7,8 @@ function collapse() {
     }
 }
 
-function resized(){
-    if (parseInt(window.innerWidth) >= 800){
+function resized() {
+    if (parseInt(window.innerWidth) >= 800) {
         document.getElementById("hamburger-par").style.display = "none";
     }
 }

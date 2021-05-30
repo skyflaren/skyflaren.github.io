@@ -1,6 +1,7 @@
-.container{
-    margin-top:  70px;
+.container {
+    margin-top: 70px;
 }
+
 #wrapper {
     width: calc(100%-80px);
     display: flex;
@@ -8,23 +9,25 @@
     padding: 40px;
     margin: auto;
 }
+
 #calendar {
     height: 100%;
 }
+
 @media screen and (max-width: 800px) {
     .container {
         text-align: center;
     }
-    #wrapper{
+    #wrapper {
         padding: 40px 0px;
     }
     .fc .fc-toolbar-title {
         font-size: 20px;
     }
-    .fc-direction-ltr .fc-toolbar> * >:not(:first-child) {
+    .fc-direction-ltr .fc-toolbar>*>:not(:first-child) {
         margin-left: 5px;
     }
     .fc .fc-button {
         font-size: 10px;
     }
- }
+}
