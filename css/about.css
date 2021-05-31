@@ -63,6 +63,8 @@
 @media screen and (max-width: 800px) {
 	.container {
 		text-align: center;
+		padding: 0px;
+		padding-right: 15px;
 	}
 	.bio-par {
 		width: 100%;
