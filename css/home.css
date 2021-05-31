@@ -173,6 +173,9 @@ iframe {
 		border-right: none;
 		border-bottom: 2px var(--grey2) solid;
 	}
+	.two-block-par p {
+		text-align: center;
+	}
 	#video {
 		width: 80%;
 		padding-bottom: 45%
