@@ -7,8 +7,8 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	flex-direction: column-reverse;
-	-webkit-flex-direction: column-reverse;
+	flex-direction: row;
+	-webkit-flex-direction: row;
 	padding-top: 30px;
 	height: 100%;
 	width: 100%;
@@ -22,9 +22,9 @@
 
 .masthead-title {
 	font-family: 'Raleway', sans-serif;
-	width: 70%;
+	padding-left: 30px;
+	width: 30vw;
 	text-align: center;
-	padding-left: 0px;
 	font-size: calc(2vw + 20px);
 	color: var(--grey2);
 	/*font-weight: 900;*/
@@ -42,8 +42,8 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	flex-direction: column;
-	-webkit-flex-direction: column;
+	flex-direction: row;
+	-webkit-flex-direction: row;
 	padding: 50px 20px;
 	max-width: 70%;
 	margin: auto;
@@ -59,15 +59,15 @@
 
 .two-block-par h2 {
 	color: var(--grey2);
-	text-align: center;
-	border-bottom: 2px var(--grey3) solid;
-	border-right: none;
+	text-align: right;
+	border-bottom: none;
+	border-right: 2px var(--grey3) solid;
 }
 
 .dark-grey .two-block-par h2 {
-	border-left: none;
 	color: var(--grey3);
-	border-bottom: 2px var(--grey2) solid;
+	border-bottom: none;
+	border-right: 2px var(--grey2) solid;
 }
 
 .dark-grey p {
@@ -84,12 +84,12 @@
 }
 
 .contact-list {
-	flex-direction: row-reverse;
-	-webkit-flex-direction: row-reverse;
+	flex-direction: column;
+	-webkit-flex-direction: column;
 }
 
 .contact-text {
-	display: none;
+	display: block;
 }
 
 .contact-text {
@@ -97,12 +97,42 @@
 }
 
 .contact-icon {
-	padding: 0px 5px;
+	padding: 0px;
 	margin: 0px;
 }
 
 .contact {
 	opacity: 1;
+}
+
+iframe {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	border-style: none;
+}
+
+#videowrapper {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding-bottom: 80px;
+}
+
+.video {
+	overflow: hidden;
+	width: 50%;
+	padding-bottom: 28.125%;
+	position: relative;
+}
+
+.video iframe {
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
 }
 
 /*
@@ -111,32 +141,40 @@
 }
 */
 
-@media screen and (min-width: 600px) {
-	.masthead-wrap, .two-block-par {
-		flex-direction: row;
-		-webkit-flex-direction: row;
+@media screen and (max-width: 800px) {
+	.masthead-wrap {
+		flex-direction: column-reverse;
+		-webkit-flex-direction: column-reverse;
 	}
-	.masthead-title {
-		padding-left: 30px;
-		width: 30vw;
-	}
-	.contact-text {
-		display: block;
-	}
-	.contact-list {
+	.two-block-par {
 		flex-direction: column;
 		-webkit-flex-direction: column;
 	}
+	.masthead-title {
+		padding-left: 0px;
+		width: 70%;
+	}
+	.contact-text {
+		display: none;
+	}
+	.contact-list {
+		flex-direction: row-reverse;
+		-webkit-flex-direction: row-reverse;
+	}
 	.contact-icon {
-		padding: 0px;
+		padding: 0px 5px;
 	}
 	.two-block-par h2 {
-		text-align: right;
-		border-bottom: none;
-		border-right: 2px var(--grey3) solid;
+		text-align: center;
+		border-bottom: 2px var(--grey3) solid;
+		border-right: none;
 	}
 	.dark-grey .two-block-par h2 {
-		border-bottom: none;
-		border-right: 2px var(--grey2) solid;
+		border-right: none;
+		border-bottom: 2px var(--grey2) solid;
+	}
+	#video {
+		width: 80%;
+		padding-bottom: 45%
 	}
 }
