@@ -24,7 +24,9 @@ async function setClub(id) {
     logo.style.borderColor = "var(--status" + club.status + ")";
     desc.innerHTML = club.desc;
     video.src = club.video;
+    video.allowTransparency = "true";
     slideshow.src = club.slideshow;
+    slideshow.allowTransparency = "true";
     slideshow.allowFullscreen = "true";
     slideshow.mozallowfullscreen = "true";
     slideshow.webkitallowfullscreen = "true";
