@@ -11,7 +11,7 @@ async function getClubs(filter) {
             let name = document.createElement("h3");
             let teacher = document.createElement("p");
             let desc = document.createElement("p");
-            hyperlink.href = club.id + "/index.html"
+            hyperlink.href = club.id + "/"
             clubwrapper.classList.add("club");
             if (club.thumbnail != "") {
                 thumbnail.src = "https://campagne-api.waba359.repl.co/clubs/logos/" + club.thumbnail;
